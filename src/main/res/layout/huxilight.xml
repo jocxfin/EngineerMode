@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/allswitch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="10.0dip">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/huxi_light_master_switch"
+                    android:layout_weight="1.0" />
+
+                <ToggleButton
+                    android:id="@id/huxi_light_master_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/redlight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="10.0dip">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/huxi_red_light"
+                    android:layout_weight="1.0" />
+
+                <ToggleButton
+                    android:id="@id/huxi_red_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/greenlight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="10.0dip">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/huxi_green_light"
+                    android:layout_weight="1.0" />
+
+                <ToggleButton
+                    android:id="@id/huxi_green_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="10.0dip">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/huxi_blue_light"
+                    android:layout_weight="1.0" />
+
+                <ToggleButton
+                    android:id="@id/huxi_blue_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:textSize="20.0sp"
+                android:id="@id/textview_huxi_red_brightness"
+                android:paddingLeft="12.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/huxi_red_brightness" />
+
+            <SeekBar
+                android:layout_gravity="center_horizontal"
+                android:id="@id/set_huxi_red_brightness"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="20.0sp"
+                android:id="@id/textview_huxi_green_brightness"
+                android:paddingLeft="12.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/huxi_green_brightness" />
+
+            <SeekBar
+                android:layout_gravity="center_horizontal"
+                android:id="@id/set_huxi_green_brightness"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="20.0sp"
+                android:id="@id/textview_huxi_blue_brightness"
+                android:paddingLeft="12.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/huxi_blue_brightness" />
+
+            <SeekBar
+                android:layout_gravity="center_horizontal"
+                android:id="@id/set_huxi_blue_brightness"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@id/flashred"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:text="@string/redflash" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@id/flashgreen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:text="@string/greenflash" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@id/flashblue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:text="@string/blueflash" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ViewStub
+                android:gravity="bottom"
+                android:id="@id/stub_judgement_buttons"
+                android:layout="@layout/judgetment_buttons"
+                android:inflatedId="@id/panel_judgement_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

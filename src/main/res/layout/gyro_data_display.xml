@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="20.0sp"
+        android:id="@id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1" />
+
+    <ListView
+        android:id="@id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip" />
+</LinearLayout>

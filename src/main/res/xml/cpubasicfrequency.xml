@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/cpu_basic_frequency_title"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/cpu_basic_frequency_entries"
+        android:title="@string/cpu_basic_frequency_title"
+        android:key="cpu_basic_frequency_setting"
+        android:dialogTitle="@string/cpu_basic_frequency_title"
+        android:entryValues="@array/cpu_basic_frequency_entriesvalue" />
+</PreferenceScreen>

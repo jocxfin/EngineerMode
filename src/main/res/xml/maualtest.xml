@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/manual_test"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/model_test_1">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest1" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/model_test_2">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest2" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/model_test_3">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest3" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_4"
+        android:key="model_test_4">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest4" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_5"
+        android:key="modeltest5">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest5" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_6"
+        android:key="modeltest6">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest6" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_7"
+        android:key="modeltest7">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest7" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_8"
+        android:key="modeltest8">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest8" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_9"
+        android:key="modeltest9">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest9" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_10"
+        android:key="modeltest10">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest10" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_11"
+        android:key="modeltest11">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest11" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_12"
+        android:key="modeltest12">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest12" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_13"
+        android:key="modeltest13">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest13" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_14"
+        android:key="modeltest14">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest14" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_15"
+        android:key="modeltest15">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest15" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_16"
+        android:key="modeltest16">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest16" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_17"
+        android:key="modeltest17">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest17" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_18"
+        android:key="modeltest18">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest18" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_19"
+        android:key="modeltest19">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest19" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/model_test_20"
+        android:key="modeltest20">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelTest20" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/third_mic_test"
+        android:key="third_mic_test">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ThirdMicTest" />
+    </PreferenceScreen>
+    <Preference android:title="@string/model_test_keycheck">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.ModeTestKeyCheck" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/receiver_test_title"
+        android:key="receiver_test"
+        android:summary="@string/receiver_test_summary">
+        <intent android:action="com.android.engineeringmode.audiotest.ReceiverTest" />
+    </PreferenceScreen>
+    <Preference android:title="@string/early_fabrication_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.EarlyFabricationTest" />
+    </Preference>
+    <Preference android:title="@string/ScreenComponentTest">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.ScreenComponentTest" />
+    </Preference>
+    <Preference
+        android:title="@string/rotation_component_test_title"
+        android:key="rotation_component">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.RotationComponentTest" />
+    </Preference>
+    <Preference
+        android:title="@string/finger_print_test_title"
+        android:key="finger_print_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.FingerPrintTest" />
+    </Preference>
+    <Preference
+        android:title="@string/Secure_Boot"
+        android:key="Secure_Boot" />
+    <Preference android:title="@string/rpmb_name">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.RPMB" />
+    </Preference>
+    <Preference
+        android:title="@string/sim_lock"
+        android:key="sim_lock" />
+    <Preference
+        android:title="@string/antenna_switch_title"
+        android:key="antenna_switch_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.AntennaSwitchTest" />
+    </Preference>
+    <Preference
+        android:title="@string/small_board_check"
+        android:key="small_board_check_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.modeltest.ModelSmallBoardCheck" />
+    </Preference>
+    <Preference
+        android:title="@string/DualSpeakerDetection"
+        android:key="audio_test_1" />
+    <Preference android:title="@string/SpeakerImpedanceDetection">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.ImpedanceTest" />
+    </Preference>
+    <Preference android:title="@string/device_disconnect_monitor_summary">
+        <intent android:action="com.android.engineeringmode.manualtes.DeviceDisconnectMonitor" />
+    </Preference>
+    <PreferenceScreen android:title="@string/software_version">
+        <intent android:action="com.android.engineeringmode.CheckSoftwareInfo" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/echotest_title"
+        android:key="echo_test">
+        <intent android:action="com.android.engineeringmode.echotest.EchoTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/multimic_title"
+        android:key="multimic_test">
+        <intent android:action="com.android.engineeringmode.manualtest.MultiMicTest" />
+    </PreferenceScreen>
+    <com.android.engineeringmode.manualtest.RTCTestListPreference
+        android:entries="@array/rtc_test_entries"
+        android:title="@string/rtc_title"
+        android:key="rtc_test"
+        android:summary="@string/rtc_summary"
+        android:dialogTitle="@string/rtc_title"
+        android:entryValues="@array/rtc_test_entriesvalue" />
+    <Preference android:title="@string/keypad_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.autotest.KeypadTest" />
+    </Preference>
+    <CheckBoxPreference
+        android:title="@string/testvirbate"
+        android:key="testvirbate" />
+    <Preference
+        android:title="@string/linear_motor_test"
+        android:key="linear_motor_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.LinearMotorTest" />
+    </Preference>
+    <Preference android:title="@string/TouchScreen">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.touchscreen.TouchScreen" />
+    </Preference>
+    <PreferenceScreen android:title="@string/headset_test">
+        <intent android:action="com.android.engineeringmode.manualtest.HeadSetTest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/manual_earphone_ctrl">
+        <intent android:action="com.android.engineeringmode.manualtest.modeltest.ModelHeadsetPlayTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/charger_test"
+        android:key="normal_charger_test">
+        <intent android:action="com.android.engineeringmode.manualtest.BatteryInfoShow.NormalCharger" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/fastcharger_test"
+        android:key="fast_charger_test">
+        <intent android:action="com.android.engineeringmode.manualtest.BatteryInfoShow.FastCharger" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/charge_control_mode_title"
+        android:key="charge_control_mode">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.ChargeModeSwitch" />
+    </Preference>
+    <PreferenceScreen android:title="@string/lcd_brightness">
+        <intent android:action="com.android.engineeringmode.LCDtest.LCDContrast" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/lcd_test">
+        <intent android:action="com.android.engineeringmode.LCDtest.LCDColorTest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/lcd_choose_effect">
+        <intent android:action="com.android.engineeringmode.LCDtest.LCDChooseEffectActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/bluetooth_search_title"
+        android:key="bluetooth_search">
+        <intent android:action="com.android.engineeringmode.bluetoothtest.BluetoothSearch" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/sensortest"
+        android:summary="@string/sensortest_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oem.sensorselftest.SensorSelfTest" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/gsensor_test_title"
+        android:summary="@string/gsensor_test_summary">
+        <intent android:action="com.android.engineeringmode.manualtest.GSensorTestList" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/gyroscope_test"
+        android:summary="@string/gyroscope_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.gyroscopetest.GyroscopeActivity" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/msensor_test_title"
+        android:summary="@string/msensor_test_summary">
+        <intent android:action="com.android.engineeringmode.manualtest.MSensorTest" />
+    </PreferenceScreen>
+    <Preference android:title="@string/proximity_sensor_title">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.ProximitySensor2" />
+    </Preference>
+    <Preference
+        android:title="@string/lisght_sensor_test_title"
+        android:summary="@string/lisght_sensor_test_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.LightSensorTest" />
+    </Preference>
+    <Preference
+        android:title="@string/rgb_sensor_cct_test"
+        android:key="rgb_sensor_cct_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.RGBSensorTest" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/laser_focus_test_title"
+        android:key="laser_focus_test"
+        android:summary="@string/laser_focus_test_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.LaserTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/gps_title"
+        android:summary="@string/gps_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.gps.GpsActivity" />
+    </PreferenceScreen>
+    <com.android.engineeringmode.manualtest.PhoneRingtone
+        android:title="@string/ring_test_title"
+        android:key="Ringtone_preference"
+        android:summary="@string/ring_test_summary" />
+    <PreferenceScreen android:title="@string/manual_call_test">
+        <intent android:action="com.android.engineeringmode.manualtest.CallTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/mic_test_title"
+        android:key="mictest"
+        android:summary="@string/mic_test_summary">
+        <intent android:action="com.android.engineeringmode.manualtest.MicTest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/srceen_light_test">
+        <intent android:action="com.android.engineeringmode.TurnOnOffBackLight" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/keep_srceen_title">
+        <intent android:action="com.android.engineeringmode.KeepSrceenOn" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/back_light_title"
+        android:key="back_light"
+        android:summary="@string/back_light_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.BackgroundLight" />
+    </Preference>
+    <PreferenceScreen android:title="@string/back_camera_preview">
+        <intent android:action="com.android.engineeringmode.autotest.BackCameraTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/front_camera_preview"
+        android:key="frontcameratest">
+        <intent android:action="com.android.engineeringmode.autotest.FrontCameraTest" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/second_back_camera_preview"
+        android:key="second_back_camera_test">
+        <intent android:action="com.android.engineeringmode.autotest.SecondBackCameraTest" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/camera_optical_image_stabilizer"
+        android:key="camera_optical_image_stabilizer">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.CameraOisTest" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/pdaf_cameeprom_info"
+        android:key="pdaf_cameeprom_info_pre">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.CheckPdafInfo" />
+    </Preference>
+    <Preference
+        android:title="@string/foolproof_camera_test"
+        android:key="foolproof_camera_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.FoolproofCameraTestExp" />
+    </Preference>
+    <Preference android:title="@string/camear_falsh">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.FlashLampTest" />
+    </Preference>
+    <Preference
+        android:title="@string/camear_falsh2"
+        android:key="fill_falsh">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.FlashLampTest2" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/dual_led_calibration"
+        android:key="dual_led_first_calibration">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.DualLedCalibrationFirstTest" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/double_flashlight_test_title"
+        android:key="double_flashlight_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.DoubleFlashLight" />
+    </Preference>
+    <Preference
+        android:title="@string/calibration_takepicture_title"
+        android:key="calibration_takepicture">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.cameratest.CameraCalibrationTest" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/sdcard_test_title"
+        android:summary="@string/sdcard_test_summary">
+        <intent android:action="com.android.engineeringmode.manualtest.SdCardTest2" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/wifi_test_title"
+        android:summary="@string/wifi_test_summary2">
+        <intent
+            android:targetPackage="com.android.settings"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.settings.wifi.WifiSettings" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/all_clear_title"
+        android:summary="@string/master_clear_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.MasterClear" />
+    </Preference>
+    <Preference android:title="@string/media_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.MediaTest" />
+    </Preference>
+    <Preference android:title="@string/simcardtest">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.SimCardTest" />
+    </Preference>
+    <Preference
+        android:title="@string/nfc_test"
+        android:key="nfctest">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.NfcTest" />
+    </Preference>
+    <Preference
+        android:title="@string/bluetooth_app_name"
+        android:key="bluetoothremotecontrol">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oem.remotecontrols.RemoteControlsActivity" />
+    </Preference>
+    <Preference
+        android:title="@string/otg_test"
+        android:key="otgtest">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.OtgTest" />
+    </Preference>
+    <Preference
+        android:title="@string/phone_connect_test"
+        android:key="phone_connect_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.PhoneConnectTest" />
+    </Preference>
+    <Preference
+        android:title="@string/heat_pipe_test"
+        android:key="heat_pipe_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.HeatPipeTest" />
+    </Preference>
+    <Preference
+        android:title="@string/cover_test"
+        android:key="cover_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.CoverTest" />
+    </Preference>
+    <Preference android:title="@string/huxilight_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.HuxiLightTest" />
+    </Preference>
+    <Preference android:title="@string/holzertest">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.HolzerTest" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/radio_test_title"
+        android:key="radiotest"
+        android:summary="@string/radio_test_summary">
+        <intent android:action="com.caf.fmradio.FMRADIO_ENG_MODE_ACTIVITY" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/hall_test"
+        android:key="HallTest">
+        <intent android:action="com.android.engineeringmode.manualtest.HallTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/hall_calibrate_title"
+        android:key="HallCalibrate">
+        <intent android:action="com.android.engineeringmode.manualtest.HallCalibrate" />
+    </PreferenceScreen>
+    <Preference android:title="@string/writelogtest">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.WriteLogTest" />
+    </Preference>
+    <Preference
+        android:enabled="false"
+        android:title="@string/mhl_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.mhl.MHLActivity" />
+    </Preference>
+    <Preference
+        android:enabled="false"
+        android:title="@string/contactor_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.ContactorTest" />
+    </Preference>
+    <Preference android:title="@string/gps_status_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.gps.GpsEnvTestActivity" />
+    </Preference>
+    <Preference android:title="@string/root_status_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.CheckRootStatusActivity" />
+    </Preference>
+    <Preference android:title="@string/lte_div_ant_title">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.LTEDivAntTest" />
+    </Preference>
+    <CheckBoxPreference
+        android:title="@string/freepathshot"
+        android:key="freepathshot" />
+    <Preference
+        android:title="@string/download_status"
+        android:key="download_status_pre">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="adnroid.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.DownloadStatus" />
+    </Preference>
+    <Preference
+        android:title="@string/enter_reboot"
+        android:key="enter_reboot" />
+</PreferenceScreen>

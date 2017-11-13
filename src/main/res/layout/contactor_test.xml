@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:textSize="34.0px"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/test_open"
+        android:layout_width="128.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip"
+        android:text="@string/open" />
+
+    <Button
+        android:textSize="34.0px"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/test_close"
+        android:layout_width="128.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="@string/close" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip">
+
+        <TextView
+            android:textSize="20.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electricity" />
+
+        <TextView
+            android:textSize="20.0sp"
+            android:id="@id/electricity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="30.0sp"
+        android:textColor="#ff00ff00"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/pass"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="@string/pass" />
+</LinearLayout>

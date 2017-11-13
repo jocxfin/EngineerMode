@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/finger_print_test_title" />
+    <Preference android:title="@string/finger_print_auto_test">
+        <intent
+            android:targetPackage="com.fingerprints.fingerprintsensortest"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.fingerprints.fingerprintsensortest.SensorTestToolActivity" />
+    </Preference>
+    <Preference android:title="@string/finger_print_quality_test">
+        <intent
+            android:targetPackage="com.fingerprints.fingerprintsensortest"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.fingerprints.fingerprintsensortest.FingerPrintQualityTest" />
+    </Preference>
+    <Preference
+        android:title="@string/module_quality_test"
+        android:key="module_quality_test">
+        <intent
+            android:targetPackage="com.fingerprints.fingerprintsensortest"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.fingerprints.fingerprintsensortest.ModuleQualityTest" />
+    </Preference>
+</PreferenceScreen>

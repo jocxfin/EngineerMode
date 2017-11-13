@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/qualcomm_nv"
+        android:key="nv_function" />
+    <Preference
+        android:title="@string/qualcomm_adjust"
+        android:key="qual_adjust_status">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.qualcomm.CalibrateStatus" />
+    </Preference>
+</PreferenceScreen>

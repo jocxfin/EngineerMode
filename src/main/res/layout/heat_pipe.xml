@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="30.0dip"
+        android:id="@id/a53_cpu0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heat_pipe_test" />
+
+    <TextView
+        android:textSize="30.0dip"
+        android:id="@id/a53_cpu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heat_pipe_test" />
+
+    <TextView
+        android:textSize="30.0dip"
+        android:id="@id/a53_cpu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heat_pipe_test" />
+
+    <TextView
+        android:textSize="30.0dip"
+        android:id="@id/a53_cpu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heat_pipe_test" />
+
+    <TextView
+        android:textSize="30.0dip"
+        android:id="@id/a57_cpu0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heat_pipe_test" />
+
+    <TextView
+        android:textSize="30.0dip"
+        android:id="@id/a57_cpu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heat_pipe_test" />
+
+    <TextView
+        android:textSize="30.0dip"
+        android:id="@id/a57_cpu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heat_pipe_test" />
+
+    <TextView
+        android:textSize="30.0dip"
+        android:id="@id/a57_cpu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heat_pipe_test" />
+</LinearLayout>

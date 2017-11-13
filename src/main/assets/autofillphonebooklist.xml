@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <!-- 通话测试 -->
+        <!-- wifi网络搜索 -->
+        <!-- 	<AutoTestItem id="wifi网络搜索">
+                <intent>com.android.engineeringmode.wifitest.WifiTest</intent>
+            </AutoTestItem>
+             -->
+        <!-- 蓝牙设备搜索 -->
+        <!-- 	<AutoTestItem id="蓝牙设备搜索">
+                <intent>com.android.engineeringmode.bluetoothtest.BluetoothSearch</intent>
+            </AutoTestItem>
+             -->
+        <!-- 耳机插拔 -->
+        <AutoTestItem id="耳机插拔">
+            <intent>com.android.engineeringmode.manualtest.HeadSetTest</intent>
+        </AutoTestItem>
+
+        <!-- LightSensor -->
+        <!-- 	<AutoTestItem id="LightSensor">
+                <intent>com.android.engineeringmode.manualtest.LightSensorTest</intent>
+            </AutoTestItem> -->
+
+        <!-- GSensor -->
+        <!--  <AutoTestItem id="Gsensor">
+            <intent>com.android.engineeringmode.manualtest.GSensorTest</intent>
+        </AutoTestItem>-->
+
+        <!-- USB otg-->
+        <AutoTestItem id="Usb otg">
+            <intent>com.android.engineeringmode.manualtest.UsbTest</intent>
+        </AutoTestItem>
+
+        <!-- 相机预览 -->
+        <AutoTestItem id="后置相机预览">
+            <intent>com.android.engineeringmode.autotest.BackCameraTest</intent>
+        </AutoTestItem>
+        <AutoTestItem id="前置相机预览">
+            <intent>com.android.engineeringmode.autotest.FrontCameraTest</intent>
+        </AutoTestItem>
+
+        <!-- 音乐播放 -->
+        <AutoTestItem id="音乐播放">
+            <intent>com.android.engineeringmode.autotest.AutoTestMusicPlay</intent>
+        </AutoTestItem>
+
+        <!-- 振动 -->
+        <AutoTestItem id="振动">
+            <intent>com.android.engineeringmode.autotest.AutoTestVibrate</intent>
+        </AutoTestItem>
+
+        <!-- mic测试 -->
+        <AutoTestItem id="mic">
+            <intent>com.android.engineeringmode.manualtest.MicTest</intent>
+        </AutoTestItem>
+
+        <!-- receiver 测试-->
+        <AutoTestItem id="receiver">
+            <intent>com.android.engineeringmode.audiotest.ReceiverTest</intent>
+        </AutoTestItem>
+
+        <!-- LCD测试 -->
+        <AutoTestItem id="LCD">
+            <intent>com.android.engineeringmode.LCDtest.LCDColorTest</intent>
+        </AutoTestItem>
+
+        <!-- 背光 -->
+        <AutoTestItem id="背光">
+            <intent>com.android.engineeringmode.autotest.AutoTestBackLight</intent>
+        </AutoTestItem>
+
+        <!-- 自动拨号测试 -->
+        <!--  		<AutoTestItem id="通话">
+                    <intent>com.android.engineeringmode.autotest.AutoCallTest</intent>
+                </AutoTestItem>
+                -->
+        <!-- 键盘测试 -->
+        <AutoTestItem id="键盘">
+            <intent>com.android.engineeringmode.autotest.KeypadTest</intent>
+        </AutoTestItem>
+
+    </Response>
+</kml>

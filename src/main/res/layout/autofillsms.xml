@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="27.0sp"
+        android:textColor="#ffff0000"
+        android:gravity="center_horizontal"
+        android:paddingLeft="6.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_fill_txt" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <Button
+            android:textSize="27.0sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/auto_fill_sms_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:text="@string/auto_fill_sms" />
+
+        <Button
+            android:textSize="27.0sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/auto_fill_contacts_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_fill_contacts" />
+    </LinearLayout>
+</LinearLayout>

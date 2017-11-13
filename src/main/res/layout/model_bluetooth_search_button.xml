@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="13.0sp"
+        android:textColor="#ff20b2aa"
+        android:gravity="center"
+        android:id="@id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retest"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignWithParentIfMissing="false" />
+</RelativeLayout>

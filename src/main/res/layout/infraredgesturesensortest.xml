@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@id/beforetest"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="55.0sp"
+            android:id="@id/topTextView"
+            android:background="@drawable/topfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textSize="10.0sp"
+            android:id="@id/centerTextView"
+            android:background="@drawable/centerfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topTextView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textSize="20.0sp"
+            android:id="@id/leftTextView"
+            android:background="@drawable/leftfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/centerTextView"
+            android:layout_alignBottom="@id/rightTextView" />
+
+        <TextView
+            android:textSize="55.0sp"
+            android:id="@id/bottomTextView"
+            android:background="@drawable/bottomfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centerTextView"
+            android:layout_alignLeft="@id/topTextView" />
+
+        <TextView
+            android:textSize="20.0sp"
+            android:id="@id/rightTextView"
+            android:background="@drawable/rightfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/centerTextView"
+            android:layout_alignBottom="@id/centerTextView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@id/aftertestresult"
+        android:background="#ffffffff"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="100.0sp"
+            android:gravity="center"
+            android:id="@id/aftertestresultTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+    <Button
+        android:textSize="25.0sp"
+        android:id="@id/retryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginBottom="50.0dip"
+        android:text="@string/retryTest"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:textSize="25.0sp"
+        android:id="@id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginBottom="50.0dip"
+        android:text="@string/exitTest"
+        android:layout_toRightOf="@id/retryButton"
+        android:layout_alignParentBottom="true" />
+
+    <ViewStub
+        android:id="@id/stub_judgement_buttons"
+        android:layout="@layout/judgetment_buttons"
+        android:inflatedId="@id/panel_judgement_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

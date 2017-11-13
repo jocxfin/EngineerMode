@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="Headset Detect Test">
+            <intent>com.android.engineeringmode.autotest.HeadsetDetectTest</intent>
+        </ModelItem>
+        <ModelItem id="Headset Key Test">
+            <intent>com.android.engineeringmode.autotest.HeadsetKeyTest</intent>
+        </ModelItem>
+        <ModelItem id="Headset Play Test">
+            <intent>com.android.engineeringmode.autotest.HeadsetPlayTest</intent>
+        </ModelItem>
+    </Response>
+</kml>

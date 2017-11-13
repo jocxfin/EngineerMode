@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <pa
+        index="0"
+        mid="0x0134"
+        pid="0x1F"
+        vid="0"
+        model="RFMD7389EU"
+        manfuture="RFMD" />
+    <pa
+        index="1"
+        mid="0x01A5"
+        pid="0x85"
+        vid="0"
+        model="sky77814"
+        manfuture="SKYWORKS" />
+    <pa
+        index="2"
+        mid="0x0134"
+        pid="0x1B"
+        vid="0"
+        model="RFMD7917"
+        manfuture="RFMD" />
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/wifi_settings"
+        android:key="wifi_settings"
+        android:summary="@string/wifi_settings_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.wifitest.WifiSettings" />
+    </Preference>
+    <Preference
+        android:title="@string/bt_enter_test_mode"
+        android:key="wifi_ftm_mode">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.wifitest.WifiFTMActivity" />
+    </Preference>
+    <CheckBoxPreference
+        android:title="@string/wifi_sensitivity_switch_title"
+        android:key="wifisensitivityswitch"
+        android:summary="@string/wifi_sensitivity_switch_summary" />
+    <Preference
+        android:title="@string/wifi_test_rf"
+        android:key="wifi_rftest_mode">
+        <intent
+            android:targetPackage="com.example.wifirftest"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.example.wifirftest.WifiRfTestActivity" />
+    </Preference>
+    <Preference
+        android:title="@string/wifi_advanced_mac_address_title"
+        android:key="wifi_mac_address" />
+</PreferenceScreen>

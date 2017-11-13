@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btn_mode1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_1_summary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btn_mode2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_2_summary" />
+        </LinearLayout>
+
+        <View
+            android:background="#ff556b2f"
+            android:layout_width="fill_parent"
+            android:layout_height="4.0px"
+            android:layout_marginTop="5.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+
+            <Button
+                android:id="@id/btn_mode3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_3" />
+
+            <TextView
+                android:id="@id/text_mode3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_3_summary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btn_mode4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_4" />
+
+            <TextView
+                android:id="@id/text_mode4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_4_summary" />
+        </LinearLayout>
+
+        <View
+            android:background="#ff556b2f"
+            android:layout_width="fill_parent"
+            android:layout_height="4.0px"
+            android:layout_marginTop="5.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+
+            <Button
+                android:id="@id/btn_mode5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_5" />
+
+            <TextView
+                android:id="@id/text_mode5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btn_mode6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_6" />
+
+            <TextView
+                android:id="@id/text_mode6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+
+            <Button
+                android:id="@id/btn_mode7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_7" />
+
+            <TextView
+                android:id="@id/text_mode7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btn_mode8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_8" />
+
+            <TextView
+                android:id="@id/text_mode8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:background="#ff556b2f"
+            android:layout_width="fill_parent"
+            android:layout_height="4.0px"
+            android:layout_marginTop="5.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+
+            <Button
+                android:id="@id/btn_mode9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_9_summary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btn_mode10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_mode_10_summary" />
+        </LinearLayout>
+
+        <View
+            android:background="#ff556b2f"
+            android:layout_width="fill_parent"
+            android:layout_height="4.0px"
+            android:layout_marginTop="5.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+
+            <Button
+                android:id="@id/btn_stop"
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_stop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_status_summary" />
+
+            <TextView
+                android:id="@id/rotation_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_status" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/dynamic_nv_tips" />
+    <Preference
+        android:title="@string/dynamic_nv_crc"
+        android:key="dynamic_nv_crc"
+        android:summary="@string/dynamic_nv_crc_summary" />
+    <Preference
+        android:title="@string/dynamic_nv_crc_compare"
+        android:key="dynamic_nv_crc_compare"
+        android:summary="@string/dynamic_nv_crc_compare_summary" />
+    <Preference
+        android:title="@string/dynamic_nv_restore"
+        android:key="dynamic_nv_restore"
+        android:summary="@string/dynamic_nv_restore_summary" />
+    <Preference
+        android:title="@string/dynamic_nv_backup"
+        android:key="dynamic_nv_backup"
+        android:summary="@string/dynamic_nv_backup_summary" />
+    <Preference
+        android:title="@string/dynamic_nv_force_backup"
+        android:key="dynamic_nv_force_backup"
+        android:summary="@string/dynamic_nv_force_backup_summary" />
+    <Preference
+        android:title="@string/qualcomm_nv_restore_count"
+        android:key="nv_adjust_count" />
+    <CheckBoxPreference
+        android:title="@string/qualcomm_nv_access"
+        android:key="nv_adjust_access" />
+    <PreferenceCategory android:title="@string/qualcomm_nvstatic_tips" />
+    <Preference
+        android:title="@string/static_nv_crc"
+        android:key="static_nv_crc"
+        android:summary="@string/static_nv_crc_summary" />
+    <Preference
+        android:title="@string/static_nv_crc_compare"
+        android:key="static_nv_crc_compare"
+        android:summary="@string/static_nv_crc_compare_summary" />
+    <Preference
+        android:title="@string/static_nv_restore"
+        android:key="static_nv_restore"
+        android:summary="@string/static_nv_restore_summary" />
+    <Preference
+        android:title="@string/static_nv_backup"
+        android:key="static_nv_backup"
+        android:summary="@string/static_nv_backup_summary" />
+    <Preference
+        android:title="@string/static_nv_force_backup"
+        android:key="static_nv_force_backup"
+        android:summary="@string/static_nv_force_backup_summary" />
+    <Preference
+        android:title="@string/qualcomm_nvstatic_restore_count"
+        android:key="nv_static_count" />
+    <CheckBoxPreference
+        android:title="@string/qualcomm_nvstatic_access"
+        android:key="nv_static_access" />
+    <PreferenceCategory />
+    <Preference
+        android:title="@string/qualcomm_nv_dump"
+        android:key="nv_dump" />
+    <PreferenceCategory />
+    <Preference
+        android:title="@string/qualcomm_ftm"
+        android:key="nv_ftm" />
+    <Preference
+        android:title="@string/qualcomm_stk"
+        android:key="nv_stk" />
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="Keypad test">
+            <intent>com.android.engineeringmode.autotest.KeypadTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Headset Detect Test">
+            <intent>com.android.engineeringmode.autotest.HeadsetDetectTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Headset Key Test">
+            <intent>com.android.engineeringmode.autotest.HeadsetKeyTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Headset Play Test">
+            <intent>com.android.engineeringmode.autotest.HeadsetPlayTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Camera Ois Still Test">
+            <intent>com.android.engineeringmode.manualtest.CameraOisStillTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Camera Optical Image Stabilizer Test">
+            <intent>com.android.engineeringmode.manualtest.CameraOpticalImageStabilizer</intent>
+        </ModelItem>
+    </Response>
+</kml>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="NormalCharger test">
+            <intent>com.android.engineeringmode.manualtest.BatteryInfoShow.NormalCharger</intent>
+        </ModelItem>
+
+        <ModelItem id="Small Board Check">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelSmallBoardCheck</intent>
+        </ModelItem>
+
+        <ModelItem id="BtSearch test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelBTSearch</intent>
+        </ModelItem>
+
+        <ModelItem id="FastCharger test">
+            <intent>com.android.engineeringmode.manualtest.BatteryInfoShow.FastCharger</intent>
+        </ModelItem>
+    </Response>
+</kml>

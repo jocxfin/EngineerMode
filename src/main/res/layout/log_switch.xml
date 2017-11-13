@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="10.0dip"
+    android:layout_marginTop="15.0dip"
+    android:layout_marginRight="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.0dip"
+        android:text="@string/assertSwitch"
+        android:layout_alignParentLeft="true" />
+
+    <ToggleButton
+        android:id="@id/toggle_assert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <ToggleButton
+        android:id="@id/toggle_qeassert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:layout_below="@id/toggle_assert"
+        android:layout_alignLeft="@id/toggle_assert" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@id/qeassert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qeassertSwitch"
+        android:layout_alignTop="@id/toggle_qeassert"
+        android:layout_alignBottom="@id/toggle_qeassert"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@id/panic_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:layout_below="@id/qeassert" />
+</RelativeLayout>

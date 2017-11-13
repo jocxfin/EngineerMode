@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/audio_test"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:persistent="false"
+        android:title="@string/audio_autosupport_vmsupport_title"
+        android:key="key_audio_autosupport_vmsupport_title" />
+    <CheckBoxPreference
+        android:persistent="true"
+        android:title="@string/audio_autosupport_autospeechrcd_title"
+        android:key="key_audio_autosupport_autospeechrcd_title" />
+</PreferenceScreen>

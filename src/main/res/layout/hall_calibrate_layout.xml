@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@id/hall_calibrate_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hall_adjust" />
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hall_calibrate_status" />
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@id/currentlowthreshold_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@id/currenthighthreshold_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hall_calibrate_averange_status" />
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@id/averagelowthreshold_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@id/averagehighthreshold_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="40.0sp"
+            android:textColor="#ffff0000"
+            android:id="@id/calibrate_result"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@id/calibrate_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hall_adjusted_start" />
+    </LinearLayout>
+</LinearLayout>

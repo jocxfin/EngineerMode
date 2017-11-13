@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/manual_call_test"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:enabled="false"
+        android:title="@string/call112"
+        android:key="112"
+        android:summary="@string/idle" />
+    <Preference
+        android:enabled="false"
+        android:title="@string/call10086"
+        android:key="10086"
+        android:summary="@string/idle" />
+    <Preference
+        android:enabled="false"
+        android:title="@string/call10000"
+        android:key="10000"
+        android:summary="@string/idle" />
+    <Preference
+        android:enabled="false"
+        android:title="@string/call10010"
+        android:key="10010"
+        android:summary="@string/idle" />
+    <CheckBoxPreference
+        android:title="@string/audio_1"
+        android:key="20_4k" />
+</PreferenceScreen>

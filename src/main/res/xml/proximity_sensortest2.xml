@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/proximity_sensor_info" />
+    <Preference android:title="@string/proximity_sensor_function">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.SensorTextProx" />
+    </Preference>
+    <Preference android:title="@string/proximity_sensor_hair">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.SensorTextProx" />
+    </Preference>
+</PreferenceScreen>

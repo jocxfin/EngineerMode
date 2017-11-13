@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="Early Fabrication Key Test">
+            <intent>com.android.engineeringmode.autotest.EarlyFabricationKeyTest</intent>
+        </ModelItem>
+        <ModelItem id="Lcd test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelLcdColorTest</intent>
+        </ModelItem>
+        <ModelItem id="TouchScreen test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelTouchScreeen</intent>
+        </ModelItem>
+        <ModelItem id="FingerPrintAuto test">
+            <intent>com.oppo.fingerprints.fingerprintsensortest.FingerPrintAutoTest</intent>
+        </ModelItem>
+        <ModelItem id="FingerPrintQuality test">
+            <intent>com.fingerprints.fingerprintsensortest.FingerPrintQualityTest</intent>
+        </ModelItem>
+
+    </Response>
+</kml>

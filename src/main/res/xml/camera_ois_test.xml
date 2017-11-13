@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/camera_ois_still_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.CameraOisStillTest" />
+    </Preference>
+    <Preference android:title="@string/camera_ois_basic_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.CameraOpticalImageStabilizer" />
+    </Preference>
+    <Preference
+        android:enabled="false"
+        android:title="@string/camera_ois_notice"
+        android:selectable="false"
+        android:summary="@string/camera_ois_notice_msg" />
+</PreferenceScreen>

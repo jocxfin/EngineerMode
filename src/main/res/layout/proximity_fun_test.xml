@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@id/proximity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:paddingLeft="6.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proximity_sensor_prox" />
+
+        <TextView
+            android:textSize="30.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/proximity_prox"
+            android:paddingLeft="6.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:paddingLeft="6.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proximity_sensor_dis" />
+
+        <TextView
+            android:textSize="30.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/proximity_dis"
+            android:paddingLeft="6.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:paddingLeft="6.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proximity_sensor_mean" />
+
+        <TextView
+            android:textSize="30.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/proximity_mean"
+            android:paddingLeft="6.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="36.0sp"
+        android:layout_gravity="center"
+        android:id="@id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1" />
+</LinearLayout>

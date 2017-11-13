@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#ff0000ff</color>
+    <color name="oppo_alert_dialog_content_text_color">#ffffffff</color>
+    <color name="alert_dialog_content_bg_color">#00ffffff</color>
+    <color name="oppo_listview_background_color">#ff000000</color>
+    <color name="large_text_color">#ff555555</color>
+    <color name="online_settings_white">#ffffffff</color>
+    <color name="gridview_alert_green">#ff00ff00</color>
+</resources>

@@ -1,0 +1,2757 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    package="com.android.engineeringmode">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DIAGNOSTIC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.REMOVE_TASKS" />
+    <uses-permission android:name="com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:name=".nvbackup.OemHookManager"
+        android:theme="@android:style/Theme.Material">
+        <uses-library android:name="com.qualcomm.qcrilhook" />
+        <uses-library android:name="com.qualcomm.qcnvitems" />
+
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:name=".EngineeringMode"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.EngineeringMode" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        //wangw@OnLineRD.DeviceService, 2013/08/25,remove at command test
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.autotest.AutoTest">
+            <intent-filter>
+                <action android:name=".AutoTest" />
+                <action android:name="com.android.engineeringmode.autotest.AutoTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autotest.AutoTestMusicPlay">
+            <intent-filter>
+                <action android:name=".AutoTestMusicPlay" />
+                <action android:name="com.android.engineeringmode.autotest.AutoTestMusicPlay" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.LanguageSwitchToChineseActivity">
+            <intent-filter>
+                <action android:name=".LanguageSwitchToChineseActivity" />
+                <action android:name="com.android.engineeringmode.LanguageSwitchToChineseActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.LanguageSwitchToEnglishActivity">
+            <intent-filter>
+                <action android:name=".LanguageSwitchToEnglishActivity" />
+                <action android:name="com.android.engineeringmode.LanguageSwitchToEnglishActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/Audio"
+            android:name="com.android.engineeringmode.audio.Audio"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.audio.Audio" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/Audio_ModeSetting"
+            android:name=".audio.Audio_ModeSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/Audio"
+            android:name=".audio.Audio_ParamSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/Audio"
+            android:name=".audio.Audio_DualMic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.VideoPlayActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".VideoPlayActivity" />
+                <action android:name="com.android.engineeringmode.VideoPlayActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autotest.BackCameraTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".BackCameraTest" />
+                <action android:name="com.android.engineeringmode.autotest.BackCameraTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.manualtest.DualLedCalibrationFirstTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".DualLedCalibrationFirstTest" />
+                <action android:name="com.android.engineeringmode.manualtest.DualLedCalibrationFirstTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.manualtest.DualLedCalibrationSecondTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".DualLedCalibrationSecondTest" />
+                <action android:name="com.android.engineeringmode.manualtest.DualLedCalibrationSecondTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autotest.FrontCameraTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".FrontCameraTest" />
+                <action android:name="com.android.engineeringmode.autotest.FrontCameraTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autotest.SecondBackCameraTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".SecondBackCameraTest" />
+                <action android:name="com.android.engineeringmode.autotest.SecondBackCameraTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/camear_falsh"
+            android:name="com.android.engineeringmode.manualtest.FlashLampTest">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.FlashLampTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/camear_falsh2"
+            android:name="com.android.engineeringmode.manualtest.FlashLampTest2">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.FlashLampTest2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/manual_test"
+            android:name="com.android.engineeringmode.manualtest.ManualTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".ManualTest" />
+                <action android:name="com.android.engineeringmode.manualtest.ManualTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.BatteryInfoShow"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".BatteryInfoShow" />
+                <action android:name="com.android.engineeringmode.manualtest.BatteryInfoShow" />
+                <action android:name="com.android.engineeringmode.manualtest.BatteryInfoShow.NormalCharger" />
+                <action android:name="com.android.engineeringmode.manualtest.BatteryInfoShow.FastCharger" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/bt_test_title"
+            android:name="com.android.engineeringmode.bluetoothtest.BluetoothTest">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.bluetoothtest.BluetoothTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/bluetooth_version_title"
+            android:name="com.android.engineeringmode.bluetoothtest.BluetoothVersionActivity">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.bluetoothtest.BluetoothVersionActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/echotest_title"
+            android:name="com.android.engineeringmode.echotest.EchoTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".EchoTest" />
+                <action android:name="com.android.engineeringmode.echotest.EchoTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/lcd_test"
+            android:name="com.android.engineeringmode.LCDtest.LCDColorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".LCDColorTest" />
+                <action android:name="com.android.engineeringmode.LCDtest.LCDColorTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/wifi_test_title"
+            android:name="com.android.engineeringmode.wifitest.WifiSettings"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.wifitest.WifiSettings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.wifitest.WifiInfo">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.wifitest.Info" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/wifi_test_title"
+            android:name="com.android.engineeringmode.wifitest.WifiTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.wifitest.WifiTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".wifitest.AdvancedSettings">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.wifitest.AdvancedSettings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".wifitest.WifiFTMActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.wifitest.WifiFTMActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/WiFi"
+            android:name=".wifimtk.WiFi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/WiFi_Tx"
+            android:name=".wifimtk.WiFi_Tx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/WiFi_Rx"
+            android:name=".wifimtk.WiFi_Rx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/WiFi_EEPROM"
+            android:name=".wifimtk.WiFi_EEPROM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/WiFi_Temperature_Sensor"
+            android:name=".wifimtk.WiFi_TemperatureSensor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/File_List_Title"
+            android:name=".wifimtk.FileList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/WiFi_MCR"
+            android:name=".wifimtk.WiFi_MCR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.android.engineeringmode.wifitest.wifiautoconnect.WifiAutoConnectActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.wifitest.wifiautoconnect.WifiAutoConnectActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.network.NetWorkSet"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".NetWorkSet" />
+                <action android:name="com.android.engineeringmode.network.NetWorkSet" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/networkset_title"
+            android:name=".network.GsmInfo"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.network.GsmInfo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/networkset_info"
+            android:name=".network.NetWorkInfo"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.network.NetWorkInfo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/band_mode_title"
+            android:name="com.android.engineeringmode.network.BandMode"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.network.BandMode" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/band_mode_title"
+            android:name="com.android.engineeringmode.network.BandMode2"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.network.BandMode2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autotest.KeypadTest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name=".KeypadTest" />
+                <action android:name="com.android.engineeringmode.autotest.KeypadTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.CheckSoftwareInfo">
+            <intent-filter>
+                <action android:name=".CheckSoftwareInfo" />
+                <action android:name="com.android.engineeringmode.CheckSoftwareInfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.LCDtest.LCDContrast"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".LCDContrast" />
+                <action android:name="com.android.engineeringmode.LCDtest.LCDContrast" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelLcdBacklightTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/lcd_choose_effect"
+            android:name="com.android.engineeringmode.LCDtest.LCDChooseEffectActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.LCDtest.LCDChooseEffectActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.TurnOnOffBackLight">
+            <intent-filter>
+                <action android:name=".TurnOnOffBackLight" />
+                <action android:name="com.android.engineeringmode.TurnOnOffBackLight" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.manualtest.HeadsetTest">
+            <intent-filter>
+                <action android:name=".HeadsetTest" />
+                <action android:name="com.android.engineeringmode.manualtest.HeadSetTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/back_light_title"
+            android:name="com.android.engineeringmode.manualtest.BackgroundLight">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.BackgroundLight" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.manualtest.SDCardTest">
+            <intent-filter>
+                <action android:name=".SDCardTest" />
+                <action android:name="com.android.engineeringmode.manualtest.SDCardTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.manualtest.SdCardTest2">
+            <intent-filter>
+                <action android:name=".SdCardTest2" />
+                <action android:name="com.android.engineeringmode.manualtest.SdCardTest2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.manualtest.WriteLogTest">
+            <intent-filter>
+                <action android:name=".WriteLogTest" />
+                <action android:name="com.android.engineeringmode.manualtest.WriteLogTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.MicTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".MicTest" />
+                <action android:name="com.android.engineeringmode.manualtest.MicTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/bluetooth_search_title"
+            android:name="com.android.engineeringmode.bluetoothtest.BluetoothSearch"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".BluetoothSearch" />
+                <action android:name="com.android.engineeringmode.bluetoothtest.BluetoothSearch" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.autoaging.AutoAgingMainListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.AutoAgingMainListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.AutoAgingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.AutoAgingActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.AutoAgingSettingsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.AutoAgingSettingsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.DRamTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".DRamTest" />
+                <action android:name="com.android.engineeringmode.autoaging.DRamTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.CpuTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".CpuTest" />
+                <action android:name="com.android.engineeringmode.autoaging.CpuTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.CallTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.CallTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.KeylightTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.KeylightTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.BacklightTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.BacklightTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.LCDTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.LCDTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.VideoTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.VideoTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.VibrateTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.VibrateTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.MicTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.MicTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.BackCameraTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.BackCameraTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.SecondBackCameraTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.SecondBackCameraTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.FrontCameraTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.FrontCameraTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.MhlTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.MhlTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.GSensorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.GSensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.BluetoothTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.BluetoothTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.GpsTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.GpsTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.WifiTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.WifiTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.ProximityTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.ProximityTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.GyroscopeTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.GyroscopeTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.LightSensorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.LightSensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autoaging.FlashlightTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autoaging.FlashlightTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/gsensor_test_title"
+            android:name="com.android.engineeringmode.manualtest.GSensorTest">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.GSensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/gsensor_test_title"
+            android:name=".manualtest.GSensorAdjust">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.GSensorAdjust" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manualtest.GSensorTestList">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.GSensorTestList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.manualtest.LightSensorTest">
+            <intent-filter>
+                <action android:name=".LightSensorTest" />
+                <action android:name="com.android.engineeringmode.manualtest.LightSensorTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/proximity_sensor_title"
+            android:name=".manualtest.ProximitySensor">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.ProximitySensor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/proximity_sensor_title"
+            android:name=".manualtest.SensorTextProx"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.SensorTextProx" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/proximity_sensor_title"
+            android:name=".manualtest.ProximitySensor2">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.ProximitySensor2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/proximity_sensor_title"
+            android:name=".manualtest.ProximityFunTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.ProximityFunTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/proximity_sensor_title"
+            android:name=".manualtest.ProximityAdjust"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.ProximityAdjust" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/msensor_test_title"
+            android:name="com.android.engineeringmode.manualtest.MSensorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.MSensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.manualtest.MSensorAutoTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.MSensorAutoTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.manualtest.MSensorAutoTest2"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.MSensorAutoTest2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/mrsensor_test_title"
+            android:name="com.android.engineeringmode.manualtest.MrSensorTest">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.MrSensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.audiotest.ReceiverTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".ReceiverTest" />
+                <action android:name="com.android.engineeringmode.audiotest.ReceiverTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.IMeiAndPcbCheck"
+            android:process="com.android.phone">
+            <intent-filter>
+                <action android:name=".IMeiAndPcbCheck" />
+                <action android:name="com.android.engineeringmode.IMeiAndPcbCheck" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name="com.android.engineeringmode.PcbShow"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.PcbShow" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/encrypt_imei_num"
+            android:name="com.android.engineeringmode.ShowEncryptImeiActivity">
+            <intent-filter>
+                <action android:name=".ShowEncryptImeiActivity" />
+                <action android:name="com.android.engineeringmode.ShowEncryptImeiActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.AllClear">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.AllClear" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/all_clear_title"
+            android:name=".manualtest.MasterClear"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.MasterClear" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.KeepSrceenOn">
+            <intent-filter>
+                <action android:name=".KeepSrceenOn" />
+                <action android:name="com.android.engineeringmode.KeepSrceenOn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.manualtest.CallTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.CallTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/auto_search_title"
+            android:name="com.android.engineeringmode.NetworkSearch"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.NetworkSearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/auto_search_title"
+            android:name="com.android.engineeringmode.NetworkSearch_New"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.NetworkSearch_New" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:exported="true"
+            android:name=".NetworkSearchService"
+            android:process="com.android.phone" />
+
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/auto_search_title"
+            android:name="com.android.engineeringmode.TDSNetworkSearch"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.TDSNetworkSearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/auto_search_title"
+            android:name="com.android.engineeringmode.WCDMANetworkSearch"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.WCDMANetworkSearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/auto_search_title"
+            android:name="com.android.engineeringmode.LTENetworkSearch"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.LTENetworkSearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/auto_search_title"
+            android:name="com.android.engineeringmode.GSMNetworkSearch"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.GSMNetworkSearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autotest.PassUnpassActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".PassUnpassActivity" />
+                <action android:name="com.android.engineeringmode.autotest.PassUnpassActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autotest.AutoTestVibrate">
+            <intent-filter>
+                <action android:name=".AutoTestVibrate" />
+                <action android:name="com.android.engineeringmode.autotest.AutoTestVibrate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.autotest.AutotestRcdShow">
+            <intent-filter>
+                <action android:name=".AutotestRcdShow" />
+                <action android:name="com.android.engineeringmode.autotest.AutotestRcdShow" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.CpuBasicFrequency">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.CpuBasicFrequency" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.gprsact.GPRS_MTK"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gprsact.GPRS_MTK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.gprsact.PDPSelectMainActivity"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gprsact.PDPSelectMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:name=".gps.GpsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gps.GpsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gps.GpsViewRecords"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gps.GpsViewRecords" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gps.GpsSearchDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Widget.Holo.Spinner.DropDown.ActionBar">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gps.GpsSearchDialog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/TouchScreen"
+            android:name=".touchscreen.TouchScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.touchscreen.TouchScreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/AutoTouchScreen"
+            android:name=".touchscreen.AutoTouchScreenTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.touchscreen.AutoTouchScreenTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/TouchScreen_Calibration"
+            android:name=".touchscreen.TouchScreen_Calibration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/TouchScreen_HandWriting"
+            android:name=".touchscreen.TouchScreen_HandWriting"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.touchscreen.TouchScreen_HandWriting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/TouchScreen_Verification"
+            android:name=".touchscreen.TouchScreen_Verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/TouchScreen_VerificationPoint"
+            android:name=".touchscreen.TouchScreen_VerificationPoint"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:label="@string/TouchScreen_VerificationLine"
+            android:name=".touchscreen.TouchScreen_VerificationLine"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:label="@string/TouchScreen_VerificationShaking"
+            android:name=".touchscreen.TouchScreen_VerificationShaking"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:label="@string/TouchScreen_MultiTouch"
+            android:name=".touchscreen.TouchScreen_MultiTouch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/auto_fill_title"
+            android:name=".AutoFillSmsContacts"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.AutoFillSmsContacts" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:name=".qualcomm.QualCommActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.QualCommActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.CalibrateStatus"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.CalibrateStatus" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.QualCommNv"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.QualCommNv" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.QualCommNv2"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.QualCommNv2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.QualCommNvShow" />
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:name=".qualcomm.DiagEnabled"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.DiagEnabled" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.ClearTelcelnetlock"
+            android:screenOrientation="portrait"
+            android:theme="@style/OppoNoDisplay">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.ClearTelcelnetlock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.RecoverTelcelnetlock"
+            android:screenOrientation="portrait"
+            android:theme="@style/OppoNoDisplay">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.RecoverTelcelnetlock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.ModemTelcelnetlock"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait"
+            android:theme="@style/OppoNoDisplay">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.ModemTelcelnetlock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.InitTelcelNV"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait"
+            android:theme="@style/OppoNoDisplay">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.InitTelcelNV" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:name=".qualcomm.OtaSwitch"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.OtaSwitch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:name=".qualcomm.LogSwitch"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.LogSwitch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.LogSwitchExt"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.LogSwitchExtCrash" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.LogSwitchExtVer" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.DeviceLog"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.DeviceLog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.InstallSpecialApk"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.InstallSpecialApk" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".qualcomm.HideSpecialApk"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.qualcomm.HideSpecialApk" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".gyroscopetest.GyroscopeActivity"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gyroscopetest.GyroscopeActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".gyroscopetest.GyroscopeGraph"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gyroscopetest.GyroscopeGraph" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".gyroscopetest.GyroscopeSelfTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gyroscopetest.GyroscopeSelfTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".gyroscopetest.GyroDispalyData"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gyroscopetest.GyroDispalyData" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".gyroscopetest.GyroscopeCalibrateTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gyroscopetest.GyroscopeCalibrateTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".mhl.MHLActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.mhl.MHLActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/TouchScreen"
+            android:name=".touchscreen.UpgradeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.touchscreen.UpgradeActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/TouchScreen"
+            android:name=".touchscreen.UpgradeTipActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="UPGRADE_ONE" />
+                <action android:name="UPGRADE_TWO" />
+                <action android:name="UPGRADE_THREE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="NvFactoryReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.EngineerMode" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:label="@string/vibrate_settings"
+            android:name=".manualtest.VibrateTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.VibrateTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/media_test"
+            android:name=".manualtest.MediaTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.MediaTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manualtest.VideoTest"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.VideoTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manualtest.ContactorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.ContactorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChargingSettings"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.ChargingSettings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CommonCommands"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.CommonCommands" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.BackCameraAdjusting"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.BackCameraAdjusting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.InfraredGestureSensorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.InfraredGestureSensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.InfraredGestureManualTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.InfraredGestureManualTest" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelInfraredGestureTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.InfraredGestureAgingTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.InfraredGestureAgingTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.HuxiLightTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.HuxiLightTest" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelBreathLigthTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.HolzerTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.HolzerTest" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelHolzerTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manualtest.SimCardTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.SimCardTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manualtest.NfcTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.NfcTest" />
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.MarkResultShow">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.MarkResultShow" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/sensortest"
+            android:name="com.oem.sensorselftest.SensorSelfTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/rgb_sensor_test"
+            android:name="com.oem.sensorselftest.RGBSensorSelfTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:label="@string/lisght_sensor_offset_test_summary"
+            android:name="com.oem.sensorselftest.LightSensorOffsetTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.oppo.sensorselftest.LightSensorOffsetTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/rgbsensor_irrate_write_test_summary"
+            android:name="com.oem.sensorselftest.RGBSensorIRRateWriteTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.oem.sensorselftest.RGBSensorIRRateWriteTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/sensoroffsettest"
+            android:name="com.oem.sensorselftest.SensorOffsetTest" />
+        <activity
+            android:name=".manualtest.MultiMicTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.MultiMicTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manualtest.OtgTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.OtgTest" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelOTGTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name=".manualtest.DeviceListActivity"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.DeviceListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest1"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest1" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest2"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest2" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest3"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest3" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest4"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest4" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest5"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest5" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest6"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest6" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest7"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest7" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest8"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest8" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest8" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest9"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest9" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest9" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest10"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest10" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest10" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest11"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest11" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest11" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest12"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest12" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest12" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest13"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest13" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest13" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest14"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest14" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest14" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest15"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest15" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest15" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest16"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest16" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest16" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest17"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest17" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest17" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest18"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest18" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest18" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest19"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest19" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest19" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest20"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTest20" />
+                <action android:name="com.oppo.engineermode.manualtest.modeltest.ModelTest20" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.wifitest.ModelWifiConnectTest">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.wifitest.ModelWifiConnectTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelBTSearch"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelBTSearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name=".manualtest.modeltest.ModelVibratorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelVibratorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.LightSensorAndBackLight"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.LightSensorAndBackLight" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.LightSensor" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ButtonLight" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelLightSensor" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelEchoTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelEchoTest" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelMicTest" />
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ThirdMicTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelLcdColorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelLcdColorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelSensorCalibration"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelSensorCalibration" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelGsensorTest">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelGsensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelMSensorAutoTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelMSensorAutoTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.GyroscopeGraph"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.GyroscopeGraph" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelProximityFunTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelProximityFunTest" />
+                <action android:name="com.android.engineeringmode.manualtest.SensorTextProx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTouchScreeen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTouchScreeen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTestResultReport"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTestResultReport" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.gps.GpsEnvVideoTestActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.gps.GpsEnvVideoTestActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.gps.GpsEnvTestActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.gps.GpsEnvTestActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.gps.GpsEnvCameraActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.gps.GpsEnvCameraActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.android.engineeringmode.gps.GpsEnvService"
+            android:process="com.android.engineeringmode" />
+        <receiver android:name="com.android.engineeringmode.EngineerModeActionReceiver">
+            <intent-filter>
+                <action android:name="com.oem.engineermode.EngineerModeMain" />
+                <action android:name="com.oppo.engineermode.EngineerModeMain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+
+                <data
+                    android:host="818"
+                    android:scheme="android_secret_code" />
+                <data
+                    android:host="838"
+                    android:scheme="android_secret_code" />
+                <data
+                    android:host="7668"
+                    android:scheme="android_secret_code" />
+                <data
+                    android:host="3439"
+                    android:scheme="android_secret_code" />
+                <data
+                    android:host="3392"
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:name="com.android.engineeringmode.RebootManager"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.RebootManager" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.android.engineeringmode.MosConfigFactory"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.MosConfigFactory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/bluetooth_app_name"
+            android:name="com.oem.remotecontrols.RemoteControlsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.oppo.remotecontrols.RemoteControlsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.oem.remotecontrols.DeviceScanActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:enabled="true"
+            android:name="com.oem.remotecontrols.SimpleKeyService" />
+
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/protocol_test_switcher"
+            android:name=".ProtocolTestSwitcher">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.ProtocolTestSwitcher" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="CFU"
+            android:name=".CfuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/device_manager"
+            android:name=".DeviceMgr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/auto_answer_title"
+            android:name=".AutoAnswer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/root_status_test"
+            android:name="com.android.engineeringmode.manualtest.CheckRootStatusActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.CheckRootStatusActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/lte_div_ant_title"
+            android:name="com.android.engineeringmode.manualtest.LTEDivAntTest"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.LTEDivAntTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/ScreenComponentTest"
+            android:name="com.android.engineeringmode.manualtest.ScreenComponentTest">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.ScreenComponentTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.manualtest.RotationComponentTest">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.RotationComponentTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.RotationMotor"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.RotationMotor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.HallTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.HallTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.HallAdjust"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.HallAdjust" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.HallSwitch"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.HallSwitch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.HallCalibrate"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.HallCalibrate" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.HallRecording"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.HallRecording" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/finger_print_test_title"
+            android:name=".manualtest.FingerPrintTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.FingerPrintTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/finger_print_auto_test"
+            android:name=".manualtest.FingerPrintAutoTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.FingerPrintAutoTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/finger_print_quality_test"
+            android:name=".manualtest.FingerPrintQualityTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.FingerPrintQualityTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/antenna_switch_title"
+            android:name=".manualtest.AntennaSwitchTest"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.AntennaSwitchTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.SwitchSetupWizardActivity">
+            <intent-filter>
+                <action android:name=".SwitchSetupWizardActivity" />
+                <action android:name="com.android.engineeringmode.SwitchSetupWizardActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:enabled="true"
+            android:name=".LanguageSwitchToZimbabweService">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.LanguageSwitchToZimbabweService" />
+            </intent-filter>
+        </service>
+        <service
+            android:enabled="true"
+            android:name=".UserAgentSwitchService">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.UserAgentSwitchService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.android.engineeringmode.LanguageSwitchActivity">
+            <intent-filter>
+                <action android:name=".LanguageSwitchActivity" />
+                <action android:name="com.android.engineeringmode.LanguageSwitchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.engineeringmode.DeleteNoNeedFilesActivity">
+            <intent-filter>
+                <action android:name=".DeleteNoNeedFilesActivity" />
+                <action android:name="com.android.engineeringmode.DeleteNoNeedFilesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/grip_sensor_test_title"
+            android:name=".manualtest.GripSensorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.GripSensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/grip_sensor_calibrate_test"
+            android:name=".manualtest.GripSensorCalibrateTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.GripSensorCalibrateTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/grip_sensor_manual_test"
+            android:name=".manualtest.GripSensorManualTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.GripSensorManualTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/laser_focus_test_title"
+            android:name=".manualtest.LaserTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.LaserFocusTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/laser_focus_calibrate_test"
+            android:name=".manualtest.LaserFocusCalibrateTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.LaserFocusCalibrateTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/laser_focus_basic_test"
+            android:name=".manualtest.LaserFocusBasicTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.LaserFocusBasicTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/laser_focus_test"
+            android:name=".manualtest.LaserFocusTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.LaserFocusTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/camera_optical_image_stabilizer"
+            android:name=".manualtest.CameraOisTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.CameraOisTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manualtest.CameraOisStillTest"
+            android:noHistory="true"
+            android:screenOrientation="reverseLandscape">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.CameraOisStillTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manualtest.CameraOpticalImageStabilizer"
+            android:noHistory="true"
+            android:screenOrientation="reverseLandscape">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.CameraOpticalImageStabilizer" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manualtest.CameraResultPage"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.CameraResultPage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/pdaf_cameeprom_info"
+            android:name="com.android.engineeringmode.manualtest.CheckPdafInfo"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.CheckPdafInfo" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/heat_pipe_test"
+            android:name=".manualtest.HeatPipeTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.HeatPipeTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/cover_test"
+            android:name=".manualtest.CoverTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.CoverTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/early_fabrication_test"
+            android:name=".manualtest.EarlyFabricationTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.EarlyFabricationTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/AutoTouchScreen"
+            android:name=".touchscreen.AutoTouchScreenTestWithButton"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.touchscreen.AutoTouchScreenTestWithButton" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/SpeakerImpedanceDetection"
+            android:name=".manualtest.ImpedanceTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.ImpedanceTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/SpeakerImpedanceDetection"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelImpedanceTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelImpedanceTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.android.engineeringmode.call.CallTestService">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.call.CallTestService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.PowerOff"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.PowerOff" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.android.engineeringmode.DetectMasterClearResult"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.DetectMasterClearResult" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.android.engineeringmode.SwitchSoftwareVersion"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name=".SwitchSoftwareVersion" />
+                <action android:name="com.android.engineeringmode.SwitchSoftwareVersion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.autotest.TriKeySwitchTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autotest.TriKeySwitchTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.engineeringmode.manualtest.QcomFastChargerTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.QcomFastChargerTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelKeyboardBackLight"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelKeyboardBackLight" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelNfcTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelNfcTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTestBatteryCover"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTestBatteryCover" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTestTopCoverModule1"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTestTopCoverModule1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelTestTopCoverModule2"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelTestTopCoverModule2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelSmallBoardCheck"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelSmallBoardCheck" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.SmartAntennaSwitchTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.SmartAntennaSwitchTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.TouchKeyTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.TouchKeyTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.StepCounterTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.StepCounterTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.PhoneConnectTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.PhoneConnectTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/charge_control_mode_title"
+            android:name="com.android.engineeringmode.ChargeModeSwitch"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.ChargeModeSwitch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/rpmb_name"
+            android:name="com.android.engineeringmode.manualtest.RPMB"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.RPMB" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/model_test_keycheck"
+            android:name="com.android.engineeringmode.manualtest.ModeTestKeyCheck"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.ModeTestKeyCheck" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/manual_earphone_ctrl"
+            android:name="com.android.engineeringmode.autotest.HeadsetDetectTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autotest.HeadsetDetectTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.modeltest.ModelHeadsetPlayTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.ModelHeadsetPlayTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/manual_earphone_ctrl"
+            android:name="com.android.engineeringmode.autotest.HeadsetKeyTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autotest.HeadsetKeyTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/manual_earphone_ctrl"
+            android:name="com.android.engineeringmode.autotest.HeadsetPlayTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autotest.HeadsetPlayTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/early_fabrication_test"
+            android:name="com.android.engineeringmode.autotest.EarlyFabricationKeyTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autotest.EarlyFabricationKeyTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/early_fabrication_test"
+            android:name="com.android.engineeringmode.autotest.ScreenComponentKeyTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.autotest.ScreenComponentKeyTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.android.engineeringmode.manualtest.DownloadStatus"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.DownloadStatus" />
+                <action android:name="com.oppo.engineermode.manualtest.DownloadStatus" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.android.engineeringmode.multimedia.SdcardReletedService"
+            android:process="com.android.engineeringmode">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.multimedia.SdcardReletedService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/foolproof_camera_test"
+            android:name="com.android.engineeringmode.manualtest.FoolproofCameraTestExp"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.FoolproofCameraTestExp" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/supl_app_name"
+            android:name="com.android.engineeringmode.supltool.SUPLToolTest"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.supltool.SUPLToolTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/device_disconnect_monitor_summary"
+            android:name="com.android.engineeringmode.manualtest.DeviceDisconnectMonitor"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtes.DeviceDisconnectMonitor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/linear_motor_test"
+            android:name="com.android.engineeringmode.manualtest.LinearMotorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtes.LinearMotorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/motor_aging_test"
+            android:name="com.android.engineeringmode.manualtest.MotorAgingTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtes.MotorAgingTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/motor_production_test"
+            android:name="com.android.engineeringmode.manualtest.MotorProductionTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtes.MotorProductionTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/motor_effect_test"
+            android:name="com.android.engineeringmode.manualtest.MotorEffectTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtes.MotorEffectTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/rgb_sensor_cct_test"
+            android:name="com.android.engineeringmode.manualtest.RGBSensorTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtes.RGBSensorTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name="com.android.engineeringmode.wifitest.WifiSocketHelper"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.wifitest.WifiSocketHelper" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.android.engineeringmode.manualtest.DoubleFlashLight"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.DoubleFlashLight" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/calibration_takepicture_title"
+            android:name="com.android.engineeringmode.manualtest.cameratest.CameraCalibrationTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.cameratest.CameraCalibrationTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/camera_test_title"
+            android:name="com.android.engineeringmode.manualtest.modeltest.CameraTestController"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.modeltest.CameraTestController" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:label="@string/ddr_aging_test"
+            android:name="com.android.engineeringmode.manualtest.DDRAgingTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.engineeringmode.manualtest.DDRAgingTest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

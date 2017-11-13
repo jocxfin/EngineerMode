@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="300.0dip"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:stretchColumns="2"
+        android:layout_weight="1.0">
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_range"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_range"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_min"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_min"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_max"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_max"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_mean"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_mean"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_raw_range"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_raw_range"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_error_status"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_error_status"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_range_offset"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_range_offset"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_cross_talk"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_cross_talk"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_rtn_signal_rate"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_rtn_signal_rate"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_ref_signal_rate"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_ref_signal_rate"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_rtn_amb_rate"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_rtn_amb_rate"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_ref_amb_rate"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_ref_amb_rate"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_conv_time"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_conv_time"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_rtn_signal_count"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_rtn_signal_count"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_ref_signal_count"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_ref_signal_count"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_rtn_amb_count"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_rtn_amb_count"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_ref_amb_count"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_ref_amb_count"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_rtn_conv_time"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_rtn_conv_time"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_ref_conv_time"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_ref_conv_time"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:textSize="40.0px"
+                android:id="@id/laser_tenth"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/laser_tenth"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_tenth"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:textSize="40.0px"
+                android:id="@id/laser_fortieth"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/laser_fortieth"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0px"
+                android:id="@id/laser_result_fortieth"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TextView
+            android:textSize="50.0px"
+            android:id="@id/laser_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </TableLayout>
+</LinearLayout>

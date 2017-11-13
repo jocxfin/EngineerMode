@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textColor="@color/online_settings_white"
+        android:id="@id/version_txtview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/current_version" />
+
+    <ListView
+        android:id="@id/upgrade_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

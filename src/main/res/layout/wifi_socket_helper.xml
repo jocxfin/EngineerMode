@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/target_ap_ssid_title"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/target_ap_ssid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_socket_signal_title"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/wifi_socket_signal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_socket_channel_title"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/wifi_socket_channel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_ip_address_title"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/wifi_ip_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_network_gateway_title"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/wifi_network_gateway"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_network_dns_title"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/wifi_network_dns"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_status_title"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/wifi_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_socket_daemon_status_title"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/wifi_socket_daemon_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_socket_service_down"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <Button
+            android:textSize="18.0sp"
+            android:id="@id/quit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exitTest"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

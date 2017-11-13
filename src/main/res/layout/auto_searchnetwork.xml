@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:textSize="60.0dip"
+        android:gravity="center"
+        android:id="@id/lv_auto_search_network"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:textSize="60.0dip"
+        android:gravity="center"
+        android:id="@id/tv_auto_search_failed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</FrameLayout>

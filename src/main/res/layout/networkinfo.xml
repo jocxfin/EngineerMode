@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@id/NetworkInfo_Cell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_Cell" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_Ch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_Ch" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_Ctrl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_Ctrl" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_RACH"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_RACH" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_LAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_LAI" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_Radio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_Radio" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_Meas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_Meas" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_Ca"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_Ca" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_Control"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_Control" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_SI2Q"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_SI2Q" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_MI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_MI" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_BLK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_BLK" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_TBF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_TBF" />
+
+        <CheckBox
+            android:id="@id/NetworkInfo_GPRS"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NetworkInfo_GPRS" />
+    </LinearLayout>
+</ScrollView>

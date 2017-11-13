@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:textColor="#ffff0000"
+            android:gravity="left"
+            android:id="@id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:text="@string/lisght_sensor_offset_test_alert"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:textSize="30.0sp"
+            android:textColor="#ff00ff00"
+            android:gravity="left"
+            android:id="@id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.0dip"
+            android:layout_below="@id/textView"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:id="@id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46.0dip"
+            android:ems="10"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentLeft="true"
+            android:inputType="number" />
+
+        <Button
+            android:textSize="25.0sp"
+            android:id="@id/btn_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48.0dip"
+            android:text="@string/lisght_sensor_offset_test_button"
+            android:layout_below="@id/editText"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textSize="30.0sp"
+            android:textColor="#ff00ff00"
+            android:gravity="center"
+            android:id="@id/result_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54.0dip"
+            android:layout_below="@id/btn_write"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

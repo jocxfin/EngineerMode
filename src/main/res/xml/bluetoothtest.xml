@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/app_name"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/bluetooth_version_title">
+        <intent android:action="com.android.engineeringmode.bluetoothtest.BluetoothVersionActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/bt_enter_test_mode">
+        <intent android:action="com.oppo.bttestmode.Main" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/bluetooth_search_audio"
+        android:key="bluetooth_search_audio">
+        <intent android:action="com.android.engineeringmode.bluetoothtest.BluetoothSearch" />
+    </Preference>
+    <Preference
+        android:title="@string/bt_test_setting"
+        android:summary="@string/bt_test_setting_summary">
+        <intent
+            android:targetPackage="com.android.settings"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.settings.bluetooth.BluetoothSettings" />
+    </Preference>
+</PreferenceScreen>

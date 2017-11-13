@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="NFC Test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelNfcTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Vibrator test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelVibratorTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Three-segmented Key Test">
+            <intent>com.android.engineeringmode.autotest.TriKeySwitchTest</intent>
+        </ModelItem>
+    </Response>
+</kml>

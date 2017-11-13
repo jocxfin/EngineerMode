@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="50.0dip"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip">
+
+        <TextView
+            android:textSize="34.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="30.0dip"
+            android:text="@string/gsensor_angle" />
+
+        <TextView
+            android:textSize="34.0px"
+            android:gravity="center"
+            android:id="@id/autoAgingGSensorAngle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip">
+
+        <TextView
+            android:textSize="34.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="30.0dip"
+            android:text="@string/gsensor_angle_x" />
+
+        <TextView
+            android:textSize="34.0px"
+            android:gravity="center"
+            android:id="@id/autoAgingGSensorX"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip">
+
+        <TextView
+            android:textSize="34.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="30.0dip"
+            android:text="@string/gsensor_angle_y" />
+
+        <TextView
+            android:textSize="34.0px"
+            android:gravity="center"
+            android:id="@id/autoAgingGSensorY"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip">
+
+        <TextView
+            android:textSize="34.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="30.0dip"
+            android:text="@string/gsensor_angle_z" />
+
+        <TextView
+            android:textSize="34.0px"
+            android:gravity="center"
+            android:id="@id/autoAgingGSensorZ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

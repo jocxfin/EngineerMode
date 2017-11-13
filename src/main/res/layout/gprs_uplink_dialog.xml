@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="28.0px"
+        android:gravity="left"
+        android:id="@id/tv_gprs_act_uplink_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:text="@string/gprs_act_uplink_data_length" />
+
+    <EditText
+        android:textSize="28.0px"
+        android:gravity="fill_horizontal"
+        android:id="@id/et_gprs_act_uplink_data_len"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:text="@string/gprs_act_uplink_data_length_default"
+        android:scrollHorizontally="true"
+        android:capitalize="none"
+        android:autoText="false"
+        android:inputType="numberDecimal" />
+</LinearLayout>

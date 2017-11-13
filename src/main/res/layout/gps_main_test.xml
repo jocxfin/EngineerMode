@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:id="@id/textView1"
+        android:paddingTop="0.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gps_status_test"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@id/gps_state_frontCameraPreview"
+        android:paddingLeft="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/front_camera_preview"
+        android:layout_below="@id/textView1" />
+
+    <CheckBox
+        android:id="@id/gps_state_backcCmeraPreview"
+        android:paddingLeft="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:text="@string/back_camera_preview"
+        android:layout_below="@id/gps_state_frontCameraPreview" />
+
+    <ToggleButton
+        android:id="@id/toggleButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:checked="false"
+        android:text="@string/gps_toogle"
+        android:layout_below="@id/gps_state_backcCmeraPreview"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/toggleButton1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/textView3"
+        android:layout_alignLeft="@id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/textView4"
+        android:layout_alignLeft="@id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/textView5"
+        android:layout_alignLeft="@id/textView5"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

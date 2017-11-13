@@ -1,0 +1,501 @@
+package com.google.zxing.common;
+
+import java.util.Map;
+
+public enum CharacterSetECI {
+    ;
+
+    private static final Map<String, CharacterSetECI> NAME_TO_ECI = null;
+    private static final Map<Integer, CharacterSetECI> VALUE_TO_ECI = null;
+    private final String[] otherEncodingNames;
+    private final int[] values;
+
+    static {
+        /* JADX: method processing error */
+/*
+Error: jadx.core.utils.exceptions.JadxRuntimeException: Not initialized variable reg: 0, insn: 0x033c: ARRAY_LENGTH  (r7 int) = (r0 ?[]), block:B:2:0x0339, method: com.google.zxing.common.CharacterSetECI.<clinit>():void
+	at jadx.core.dex.visitors.ssa.SSATransform.renameVar(SSATransform.java:168)
+	at jadx.core.dex.visitors.ssa.SSATransform.renameVar(SSATransform.java:197)
+	at jadx.core.dex.visitors.ssa.SSATransform.renameVar(SSATransform.java:197)
+	at jadx.core.dex.visitors.ssa.SSATransform.renameVariables(SSATransform.java:132)
+	at jadx.core.dex.visitors.ssa.SSATransform.process(SSATransform.java:52)
+	at jadx.core.dex.visitors.ssa.SSATransform.visit(SSATransform.java:42)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:31)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:17)
+	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:306)
+	at jadx.api.JavaClass.decompile(JavaClass.java:62)
+	at jadx.api.JadxDecompiler$1.run(JadxDecompiler.java:199)
+*/
+        /*
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "Cp437";
+        r12 = 0;
+        r13 = 2;
+        r13 = new int[r13];
+        r14 = 0;
+        r15 = 0;
+        r13[r14] = r15;
+        r14 = 1;
+        r15 = 2;
+        r13[r14] = r15;
+        r14 = 0;
+        r14 = new java.lang.String[r14];
+        r10.<init>(r11, r12, r13, r14);
+        Cp437 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_1";
+        r12 = 1;
+        r13 = 2;
+        r13 = new int[r13];
+        r14 = 0;
+        r15 = 1;
+        r13[r14] = r15;
+        r14 = 1;
+        r15 = 3;
+        r13[r14] = r15;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-1";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_1 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_2";
+        r12 = 2;
+        r13 = 4;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-2";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_2 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_3";
+        r12 = 3;
+        r13 = 5;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-3";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_3 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_4";
+        r12 = 4;
+        r13 = 6;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-4";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_4 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_5";
+        r12 = 5;
+        r13 = 7;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-5";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_5 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_6";
+        r12 = 6;
+        r13 = 8;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-6";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_6 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_7";
+        r12 = 7;
+        r13 = 9;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-7";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_7 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_8";
+        r12 = 8;
+        r13 = 10;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-8";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_8 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_9";
+        r12 = 9;
+        r13 = 11;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-9";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_9 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_10";
+        r12 = 10;
+        r13 = 12;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-10";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_10 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_11";
+        r12 = 11;
+        r13 = 13;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-11";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_11 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_13";
+        r12 = 12;
+        r13 = 15;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-13";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_13 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_14";
+        r12 = 13;
+        r13 = 16;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-14";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_14 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_15";
+        r12 = 14;
+        r13 = 17;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-15";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_15 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ISO8859_16";
+        r12 = 15;
+        r13 = 18;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "ISO-8859-16";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ISO8859_16 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "SJIS";
+        r12 = 16;
+        r13 = 20;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "Shift_JIS";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        SJIS = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "Cp1250";
+        r12 = 17;
+        r13 = 21;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "windows-1250";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        Cp1250 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "Cp1251";
+        r12 = 18;
+        r13 = 22;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "windows-1251";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        Cp1251 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "Cp1252";
+        r12 = 19;
+        r13 = 23;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "windows-1252";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        Cp1252 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "Cp1256";
+        r12 = 20;
+        r13 = 24;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "windows-1256";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        Cp1256 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "UnicodeBigUnmarked";
+        r12 = 21;
+        r13 = 25;
+        r14 = 2;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "UTF-16BE";
+        r14[r15] = r16;
+        r15 = 1;
+        r16 = "UnicodeBig";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        UnicodeBigUnmarked = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "UTF8";
+        r12 = 22;
+        r13 = 26;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "UTF-8";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        UTF8 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "ASCII";
+        r12 = 23;
+        r13 = 2;
+        r13 = new int[r13];
+        r14 = 0;
+        r15 = 27;
+        r13[r14] = r15;
+        r14 = 1;
+        r15 = 170; // 0xaa float:2.38E-43 double:8.4E-322;
+        r13[r14] = r15;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "US-ASCII";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        ASCII = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "Big5";
+        r12 = 24;
+        r13 = 28;
+        r10.<init>(r11, r12, r13);
+        Big5 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "GB18030";
+        r12 = 25;
+        r13 = 29;
+        r14 = 3;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "GB2312";
+        r14[r15] = r16;
+        r15 = 1;
+        r16 = "EUC_CN";
+        r14[r15] = r16;
+        r15 = 2;
+        r16 = "GBK";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        GB18030 = r10;
+        r10 = new com.google.zxing.common.CharacterSetECI;
+        r11 = "EUC_KR";
+        r12 = 26;
+        r13 = 30;
+        r14 = 1;
+        r14 = new java.lang.String[r14];
+        r15 = 0;
+        r16 = "EUC-KR";
+        r14[r15] = r16;
+        r10.<init>(r11, r12, r13, r14);
+        EUC_KR = r10;
+        r10 = 27;
+        r10 = new com.google.zxing.common.CharacterSetECI[r10];
+        r11 = 0;
+        r12 = Cp437;
+        r10[r11] = r12;
+        r11 = 1;
+        r12 = ISO8859_1;
+        r10[r11] = r12;
+        r11 = 2;
+        r12 = ISO8859_2;
+        r10[r11] = r12;
+        r11 = 3;
+        r12 = ISO8859_3;
+        r10[r11] = r12;
+        r11 = 4;
+        r12 = ISO8859_4;
+        r10[r11] = r12;
+        r11 = 5;
+        r12 = ISO8859_5;
+        r10[r11] = r12;
+        r11 = 6;
+        r12 = ISO8859_6;
+        r10[r11] = r12;
+        r11 = 7;
+        r12 = ISO8859_7;
+        r10[r11] = r12;
+        r11 = 8;
+        r12 = ISO8859_8;
+        r10[r11] = r12;
+        r11 = 9;
+        r12 = ISO8859_9;
+        r10[r11] = r12;
+        r11 = 10;
+        r12 = ISO8859_10;
+        r10[r11] = r12;
+        r11 = 11;
+        r12 = ISO8859_11;
+        r10[r11] = r12;
+        r11 = 12;
+        r12 = ISO8859_13;
+        r10[r11] = r12;
+        r11 = 13;
+        r12 = ISO8859_14;
+        r10[r11] = r12;
+        r11 = 14;
+        r12 = ISO8859_15;
+        r10[r11] = r12;
+        r11 = 15;
+        r12 = ISO8859_16;
+        r10[r11] = r12;
+        r11 = 16;
+        r12 = SJIS;
+        r10[r11] = r12;
+        r11 = 17;
+        r12 = Cp1250;
+        r10[r11] = r12;
+        r11 = 18;
+        r12 = Cp1251;
+        r10[r11] = r12;
+        r11 = 19;
+        r12 = Cp1252;
+        r10[r11] = r12;
+        r11 = 20;
+        r12 = Cp1256;
+        r10[r11] = r12;
+        r11 = 21;
+        r12 = UnicodeBigUnmarked;
+        r10[r11] = r12;
+        r11 = 22;
+        r12 = UTF8;
+        r10[r11] = r12;
+        r11 = 23;
+        r12 = ASCII;
+        r10[r11] = r12;
+        r11 = 24;
+        r12 = Big5;
+        r10[r11] = r12;
+        r11 = 25;
+        r12 = GB18030;
+        r10[r11] = r12;
+        r11 = 26;
+        r12 = EUC_KR;
+        r10[r11] = r12;
+        $VALUES = r10;
+        r10 = new java.util.HashMap;
+        r10.<init>();
+        VALUE_TO_ECI = r10;
+        r10 = new java.util.HashMap;
+        r10.<init>();
+        NAME_TO_ECI = r10;
+        r1 = values();
+        r6 = r1.length;
+        r4 = 0;
+        r5 = r4;
+    L_0x0336:
+        if (r5 < r6) goto L_0x0339;
+    L_0x0339:
+        r3 = r1[r5];
+        r7 = r0.length;
+        r4 = 0;
+    L_0x033e:
+        if (r4 < r7) goto L_0x0350;
+    L_0x0340:
+        r10 = NAME_TO_ECI;
+        r10.put(r11, r3);
+        r7 = r2.length;
+        r4 = 0;
+    L_0x034a:
+        if (r4 < r7) goto L_0x035e;
+    L_0x034c:
+        r4 = r5 + 1;
+        r5 = r4;
+        goto L_0x0336;
+    L_0x0350:
+        r9 = r0[r4];
+        r10 = VALUE_TO_ECI;
+        r11 = java.lang.Integer.valueOf(r9);
+        r10.put(r11, r3);
+        r4 = r4 + 1;
+        goto L_0x033e;
+    L_0x035e:
+        r8 = r2[r4];
+        r10 = NAME_TO_ECI;
+        r10.put(r8, r3);
+        r4 = r4 + 1;
+        goto L_0x034a;
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.zxing.common.CharacterSetECI.<clinit>():void");
+    }
+
+    private CharacterSetECI(int value) {
+        this(r3, r4, new int[]{value}, new String[0]);
+    }
+
+    private CharacterSetECI(int value, String... otherEncodingNames) {
+        this.values = new int[]{value};
+        this.otherEncodingNames = otherEncodingNames;
+    }
+
+    private CharacterSetECI(int[] values, String... otherEncodingNames) {
+        this.values = values;
+        this.otherEncodingNames = otherEncodingNames;
+    }
+
+    public int getValue() {
+        return this.values[0];
+    }
+
+    public static CharacterSetECI getCharacterSetECIByName(String name) {
+        return (CharacterSetECI) NAME_TO_ECI.get(name);
+    }
+}

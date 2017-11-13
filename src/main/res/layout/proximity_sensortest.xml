@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="40.0sp"
+            android:id="@id/tv_body_respone_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light_body_respone" />
+
+        <TextView
+            android:textSize="38.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/tv_body_cleardata"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light_cleardata" />
+
+        <TextView
+            android:textSize="38.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/tv_body_irdata"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light_irdata" />
+
+        <TextView
+            android:textSize="38.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/tv_body_prox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light_prox" />
+
+        <TextView
+            android:textSize="38.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/tv_body_lux"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light_lux" />
+
+        <TextView
+            android:textSize="38.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/tv_body_dis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light_dis" />
+    </LinearLayout>
+</LinearLayout>

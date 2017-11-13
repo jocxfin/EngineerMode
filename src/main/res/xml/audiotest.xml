@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/audio_test"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/audiotest_modeset_entries"
+        android:title="@string/audio_set_mode"
+        android:key="audio_mode_set"
+        android:summary="@string/audio_test_summary"
+        android:dialogTitle="@string/audio_set_mode"
+        android:entryValues="@array/audiotest_modeset_entriesvalue" />
+    <PreferenceScreen
+        android:title="@string/audio_test_normal_mode"
+        android:key="key_audio_normal_mode_set">
+        <intent android:action="com.android.engineeringmode.audiotest.NormalModeActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/audio_test_headset_mode"
+        android:key="key_audio_headset_mode_set">
+        <intent android:action="com.android.engineeringmode.audiotest.HeadsetModeActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/audio_test_loudspeaker_mode"
+        android:key="key_audio_loudspeaker_mode_set">
+        <intent android:action="com.android.engineeringmode.audiotest.LoudSpeakerModeActivity" />
+    </PreferenceScreen>
+    <com.android.engineeringmode.manualtest.PhoneRingtone
+        android:title="@string/ring_test_title"
+        android:key="Ringtone_preference"
+        android:summary="@string/ring_test_summary" />
+    <PreferenceScreen android:title="@string/audio_tone_up_title">
+        <intent android:action="com.android.engineeringmode.audiotest.AudioToneupActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/audio_auto_recording_setting_title">
+        <intent android:action="com.android.engineeringmode.audiotest.AutoSupportActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>

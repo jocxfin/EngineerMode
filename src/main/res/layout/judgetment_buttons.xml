@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal"
+    android:background="#ff008000"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="13.0sp"
+        android:gravity="center"
+        android:id="@id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_suc"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="13.0sp"
+        android:textColor="#ff20b2aa"
+        android:gravity="center"
+        android:id="@id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retest"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="13.0sp"
+        android:textColor="#ffff0000"
+        android:gravity="center"
+        android:id="@id/fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_failed"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:title="@string/audio_tone_up_commond_param_title"
+        android:key="@string/audio_tone_up_commond_param_title">
+        <intent android:action="com.android.engineeringmode.audiotest.ParamSelectActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/audio_tone_up_normal_title"
+        android:key="@string/audio_tone_up_normal_title">
+        <intent android:action="com.android.engineeringmode.audiotest.ParamSelectActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/audio_tone_up_headset_title"
+        android:key="@string/audio_tone_up_headset_title">
+        <intent android:action="com.android.engineeringmode.audiotest.ParamSelectActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/audio_tone_up_loudspeaker_title"
+        android:key="@string/audio_tone_up_loudspeaker_title">
+        <intent android:action="com.android.engineeringmode.audiotest.ParamSelectActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/audio_tone_up_bt_mode_title"
+        android:key="@string/audio_tone_up_bt_mode_title">
+        <intent android:action="com.android.engineeringmode.audiotest.ParamSelectActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/audio_tone_up_bt_wireless_mode_title"
+        android:key="@string/audio_tone_up_bt_wireless_mode_title">
+        <intent android:action="com.android.engineeringmode.audiotest.ParamSelectActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/linerlayout_keepblon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:gravity="center"
+            android:id="@id/tv_keep_srceen_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keep_srceen_on" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@id/stub_judgement_buttons"
+        android:layout="@layout/judgetment_buttons"
+        android:inflatedId="@id/panel_judgement_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</LinearLayout>

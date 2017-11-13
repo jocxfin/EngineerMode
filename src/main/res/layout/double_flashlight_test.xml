@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@id/open_warm_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_warm_flash" />
+
+        <Button
+            android:id="@id/close_warm_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close_warm_flash" />
+
+        <Button
+            android:id="@id/open_cold_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_cold_flash" />
+
+        <Button
+            android:id="@id/close_cold_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close_cold_flash" />
+
+        <Button
+            android:id="@id/open_both_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_both_flash" />
+
+        <Button
+            android:id="@id/close_both_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close_both_flash" />
+
+        <TextView
+            android:id="@id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flash_interval"
+            android:editable="false" />
+
+        <SeekBar
+            android:id="@id/seekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="29" />
+
+        <Button
+            android:id="@id/warm_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/warm_flash" />
+
+        <Button
+            android:id="@id/close_flash_warm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close_flash_warm" />
+
+        <Button
+            android:id="@id/cold_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cold_flash" />
+
+        <Button
+            android:id="@id/close_flash_cold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close_flash_cold" />
+
+        <Button
+            android:id="@id/both_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/both_flash" />
+
+        <Button
+            android:id="@id/close_flash_both"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close_flash_both" />
+
+        <Button
+            android:id="@id/finish"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finish" />
+    </LinearLayout>
+</ScrollView>

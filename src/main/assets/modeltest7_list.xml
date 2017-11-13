@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="LCDContrast test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelLcdBacklightTest</intent>
+        </ModelItem>
+
+        <ModelItem id="BreathLight test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelBreathLigthTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Keyboard BackLight">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelKeyboardBackLight</intent>
+        </ModelItem>
+    </Response>
+</kml>

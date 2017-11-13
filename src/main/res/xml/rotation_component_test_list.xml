@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:title="@string/rotation_motor"
+        android:key="HallTest">
+        <intent android:action="com.android.engineeringmode.manualtest.RotationMotor" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/hall_test"
+        android:key="HallTest">
+        <intent android:action="com.android.engineeringmode.manualtest.HallTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/hall_recording"
+        android:key="HallRecording">
+        <intent android:action="com.android.engineeringmode.manualtest.HallRecording" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/hall_calibrate_title"
+        android:key="HallCalibrate">
+        <intent android:action="com.android.engineeringmode.manualtest.HallCalibrate" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/hall_switch_title"
+        android:key="HallSwitch">
+        <intent android:action="com.android.engineeringmode.manualtest.HallSwitch" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/receiver_test_title"
+        android:summary="@string/receiver_test_summary">
+        <intent android:action="com.android.engineeringmode.audiotest.ReceiverTest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/back_camera_preview">
+        <intent android:action="com.android.engineeringmode.autotest.BackCameraTest" />
+    </PreferenceScreen>
+    <Preference android:title="@string/camear_falsh">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.FlashLampTest" />
+    </Preference>
+    <Preference android:title="@string/camear_falsh2">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.FlashLampTest2" />
+    </Preference>
+    <Preference android:title="@string/proximity_sensor_title">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.ProximitySensor2" />
+    </Preference>
+    <Preference
+        android:title="@string/lisght_sensor_test_title"
+        android:summary="@string/lisght_sensor_test_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.LightSensorTest" />
+    </Preference>
+</PreferenceScreen>

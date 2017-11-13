@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        style="@style/background_style">
+
+        <Button
+            android:textSize="34.0px"
+            android:id="@id/breath_open"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:text="@string/breath_open"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:textSize="34.0px"
+            android:id="@id/breath_close"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6.0dip"
+            android:text="@string/breath_close"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="34.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breath_rise_time" />
+
+        <SeekBar
+            android:layout_gravity="center_horizontal"
+            android:id="@id/breath_rise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="34.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breath_fall_time" />
+
+        <SeekBar
+            android:layout_gravity="center_horizontal"
+            android:id="@id/breath_fall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="34.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breath_on_time" />
+
+        <SeekBar
+            android:layout_gravity="center_horizontal"
+            android:id="@id/breath_on"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="34.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breath_off_time" />
+
+        <SeekBar
+            android:layout_gravity="center_horizontal"
+            android:id="@id/breath_off"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

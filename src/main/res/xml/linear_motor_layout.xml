@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/linear_motor_test" />
+    <Preference android:title="@string/motor_aging_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.MotorAgingTest" />
+    </Preference>
+    <Preference android:title="@string/motor_production_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.MotorProductionTest" />
+    </Preference>
+    <Preference android:title="@string/motor_effect_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.MotorEffectTest" />
+    </Preference>
+</PreferenceScreen>

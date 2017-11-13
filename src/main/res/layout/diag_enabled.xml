@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginRight="10.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17.0dip"
+                android:text="@string/diagSwitch"
+                android:layout_alignParentLeft="true" />
+
+            <ToggleButton
+                android:id="@id/toggle_diag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginRight="10.0dip">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/serial"
+                android:layout_weight="1.0" />
+
+            <ToggleButton
+                android:id="@id/toggle_serial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginRight="10.0dip">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/allDiagSwitch"
+                android:layout_weight="1.0" />
+
+            <ToggleButton
+                android:id="@id/toggle_alldiag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginRight="10.0dip">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/rndisAndDiagSwitch"
+                android:layout_weight="1.0" />
+
+            <ToggleButton
+                android:id="@id/rndisAndDiag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="34.0px"
+            android:textColor="#ffff0000"
+            android:gravity="center"
+            android:id="@id/privilege_text"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="15.0dip"
+            android:text="@string/privilege" />
+
+        <Button
+            android:textSize="34.0px"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:id="@id/privilege"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" />
+    </LinearLayout>
+</LinearLayout>

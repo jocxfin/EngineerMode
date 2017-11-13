@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:textSize="20.0sp"
+        android:gravity="center"
+        android:id="@id/exit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exitTest"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:textSize="30.0sp"
+        android:gravity="center"
+        android:id="@id/touch_screen_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="263.0dip"
+        android:layout_above="@id/exit_button"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:textSize="30.0sp"
+        android:gravity="center"
+        android:id="@id/left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="163.0dip"
+        android:layout_above="@id/exit_button"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:textSize="30.0sp"
+        android:gravity="center"
+        android:id="@id/right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63.0dip"
+        android:layout_above="@id/exit_button"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

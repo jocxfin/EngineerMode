@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginRight="10.0dip">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otaTest"
+            android:layout_alignTop="@id/toggle_ota"
+            android:layout_alignBottom="@id/toggle_ota"
+            android:layout_alignParentLeft="true" />
+
+        <ToggleButton
+            android:id="@id/toggle_ota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30.0px">
+
+        <TextView
+            android:textColor="#ffff0000"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otaTest_notification" />
+    </LinearLayout>
+</LinearLayout>

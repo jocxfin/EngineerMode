@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@id/host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_host" />
+
+    <EditText
+        android:id="@id/host_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_host_text"
+        android:maxLength="20"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@id/port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_port" />
+
+    <EditText
+        android:id="@id/port_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_port_text"
+        android:maxLength="20"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@id/mode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@id/msa"
+            android:text="@string/supl_msa" />
+
+        <RadioButton
+            android:id="@id/msb"
+            android:text="@string/supl_msb" />
+
+        <RadioButton
+            android:id="@id/standalone"
+            android:checked="true"
+            android:text="@string/supl_standalone" />
+    </RadioGroup>
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:id="@id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_view" />
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:id="@id/used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_used" />
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:id="@id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_download" />
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:id="@id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_loc" />
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:id="@id/ttff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_ttff" />
+
+    <Button
+        android:id="@id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_start" />
+
+    <Button
+        android:id="@id/stop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_stop" />
+
+    <Button
+        android:id="@id/del_aid_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/supl_del_aid_data" />
+</LinearLayout>

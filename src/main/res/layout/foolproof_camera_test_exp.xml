@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+    android:background="#ff000000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.android.engineeringmode.autotest.CameraPreview
+        android:layout_gravity="center"
+        android:id="@id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="30.0sp"
+            android:id="@id/backcamera_test_result"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textSize="30.0sp"
+            android:id="@id/frontcamera_test_result"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backcamera_test_result"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textSize="30.0sp"
+            android:id="@id/secondbackcamera_test_result"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frontcamera_test_result"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

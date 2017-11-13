@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/multimedia_player"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="MP3 Test"
+        android:key="Mp3Test" />
+</PreferenceScreen>

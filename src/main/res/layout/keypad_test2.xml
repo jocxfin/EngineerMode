@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_second"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/keypad_first"
+        style="@style/background_style" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_third"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/keypad_second"
+        style="@style/background_style" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_fourth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/keypad_third"
+        style="@style/background_style" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_fifth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/keypad_fourth"
+        style="@style/background_style" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_sixth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/keypad_fifth"
+        style="@style/background_style" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_seventh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/keypad_sixth"
+        style="@style/background_style" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_eighth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/keypad_seventh"
+        style="@style/background_style" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/keypad_ninth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_below="@id/keypad_eighth"
+        style="@style/background_style" />
+
+    <Button
+        android:id="@id/keypad_btn"
+        android:focusable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:text="@string/autotest_exit"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

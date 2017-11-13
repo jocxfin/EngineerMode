@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:typeface="monospace"
+        android:textColor="#ff00ff00"
+        android:layout_gravity="center"
+        android:id="@id/statistics_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/statistics_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.0dip"
+        android:text="@string/statistics_cancel" />
+</LinearLayout>

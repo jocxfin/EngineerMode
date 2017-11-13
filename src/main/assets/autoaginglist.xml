@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <!-- DRAM测试 -->
+        <AutoTestItem id="DRAM测试">
+            <intent>com.android.engineeringmode.autoaging.DRamTest</intent>
+        </AutoTestItem>
+
+        <!-- DRAM测试 -->
+        <AutoTestItem id="CPU全速测试">
+            <intent>com.android.engineeringmode.autoaging.CpuTest</intent>
+        </AutoTestItem>
+
+        <!-- 通话测试 -->
+        <AutoTestItem id="通话测试">
+            <intent>com.android.engineeringmode.autoaging.CallTest</intent>
+        </AutoTestItem>
+
+        <!-- 按键背光灯 -->
+        <AutoTestItem id="按键背光灯" toggleOn="常亮" toggleOff="闪动">
+            <intent>com.android.engineeringmode.autoaging.KeylightTest</intent>
+        </AutoTestItem>
+
+        <!-- 背光测试 -->
+        <AutoTestItem id="背光测试" toggleOn="常亮" toggleOff="闪动">
+            <intent>com.android.engineeringmode.autoaging.BacklightTest</intent>
+        </AutoTestItem>
+
+        <!-- LCD测试 -->
+        <AutoTestItem id="LCD测试">
+            <intent>com.android.engineeringmode.autoaging.LCDTest</intent>
+        </AutoTestItem>
+
+        <!-- 视频播放 -->
+        <AutoTestItem id="视频播放">
+            <intent>com.android.engineeringmode.autoaging.VideoTest</intent>
+        </AutoTestItem>
+
+        <!-- 振动 -->
+        <AutoTestItem id="振动">
+            <intent>com.android.engineeringmode.autoaging.VibrateTest</intent>
+        </AutoTestItem>
+
+        <!-- MIC测试 -->
+        <AutoTestItem id="MIC测试">
+            <intent>com.android.engineeringmode.autoaging.MicTest</intent>
+        </AutoTestItem>
+
+        <!-- 相机预览 -->
+        <AutoTestItem id="后置相机预览">
+            <intent>com.android.engineeringmode.autoaging.BackCameraTest</intent>
+        </AutoTestItem>
+
+        <AutoTestItem id="第二后置相机预览">
+            <intent>com.android.engineeringmode.autoaging.SecondBackCameraTest</intent>
+        </AutoTestItem>
+
+        <AutoTestItem id="前置相机预览">
+            <intent>com.android.engineeringmode.autoaging.FrontCameraTest</intent>
+        </AutoTestItem>
+
+        <!-- MHL测试 -->
+        <!--
+        <AutoTestItem id="MHL测试">
+            <intent>com.android.engineeringmode.autoaging.MhlTest</intent>
+        </AutoTestItem>
+        -->
+        <!-- GSensor测试 -->
+        <AutoTestItem id="GSensor测试">
+            <intent>com.android.engineeringmode.autoaging.GSensorTest</intent>
+        </AutoTestItem>
+
+        <!-- 蓝牙测试 -->
+        <AutoTestItem id="蓝牙测试">
+            <intent>com.android.engineeringmode.autoaging.BluetoothTest</intent>
+        </AutoTestItem>
+
+        <!-- GPS测试 -->
+        <AutoTestItem id="GPS测试">
+            <intent>com.android.engineeringmode.autoaging.GpsTest</intent>
+        </AutoTestItem>
+
+        <!-- Wifi测试 -->
+        <AutoTestItem id="Wifi测试">
+            <intent>com.android.engineeringmode.autoaging.WifiTest</intent>
+        </AutoTestItem>
+
+
+        <!-- 陀螺仪测试-->
+        <AutoTestItem id="陀螺仪测试">
+            <intent>com.android.engineeringmode.autoaging.GyroscopeTest</intent>
+        </AutoTestItem>
+
+        <!-- 感光sensor测试-->
+        <AutoTestItem id="感光sensor测试">
+            <intent>com.android.engineeringmode.autoaging.LightSensorTest</intent>
+        </AutoTestItem>
+
+        <!-- 闪光灯测试 -->
+        <AutoTestItem id="闪光灯" toggleOn="常亮" toggleOff="闪动">
+            <intent>com.android.engineeringmode.autoaging.FlashlightTest</intent>
+        </AutoTestItem>
+
+    </Response>
+</kml>

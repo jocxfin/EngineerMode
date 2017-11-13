@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+
+
+        <!-- Light sensor test -->
+        <AutoTestItem id="LightSensor test">
+            <intent>com.android.engineeringmode.manualtest.LightSensorTest</intent>
+        </AutoTestItem>
+        <!-- Gsensor test -->
+        <AutoTestItem id="Gsensor test">
+            <intent>com.android.engineeringmode.manualtest.GSensorTest</intent>
+        </AutoTestItem>
+
+        <!-- Gsensor test -->
+        <AutoTestItem id="陀螺仪">
+            <intent>com.android.engineeringmode.gyroscopetest.GyroscopeGraph</intent>
+        </AutoTestItem>
+
+        <AutoTestItem id="后置相机预览">
+            <intent>com.android.engineeringmode.autotest.BackCameraTest</intent>
+        </AutoTestItem>
+
+        <AutoTestItem id="前置相机预览">
+            <intent>com.android.engineeringmode.autotest.FrontCameraTest</intent>
+        </AutoTestItem>
+
+        <!-- 振动 -->
+        <AutoTestItem id="振动">
+            <intent>com.android.engineeringmode.autotest.AutoTestVibrate</intent>
+        </AutoTestItem>
+
+        <!-- 回音测试 -->
+        <AutoTestItem id="回音">
+            <intent>com.android.engineeringmode.echotest.EchoTest</intent>
+        </AutoTestItem>
+
+        <!-- 背光测试 -->
+        <AutoTestItem id="背光">
+            <intent>com.android.engineeringmode.TurnOnOffBackLight</intent>
+        </AutoTestItem>
+
+        <!-- LCD测试 -->
+        <AutoTestItem id="LCD">
+            <intent>com.android.engineeringmode.LCDtest.LCDColorTest</intent>
+        </AutoTestItem>
+
+
+    </Response>
+</kml>

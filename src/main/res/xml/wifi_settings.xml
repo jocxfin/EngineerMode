@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wifi_settings_category"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:persistent="false"
+        android:title="@string/wifi_quick_toggle_title"
+        android:key="enable_wifi"
+        android:summary="@string/wifi_quick_toggle_summary" />
+    <com.android.engineeringmode.wifitest.WifiDownloadPreference
+        android:title="@string/wifi_test_download_status"
+        android:key="key_wifi_download_status"
+        android:summary="@string/wifi_test_not_in_download" />
+    <EditTextPreference
+        android:persistent="false"
+        android:singleLine="true"
+        android:digits="0123456789."
+        android:title="@string/wifi_test_set_server_ip"
+        android:key="key_wifi_server_ip_set"
+        android:inputType="number" />
+    <EditTextPreference
+        android:persistent="false"
+        android:singleLine="true"
+        android:title="@string/wifi_test_set_server_file_path"
+        android:key="key_wifi_server_filepath_set" />
+    <com.android.engineeringmode.wifitest.ProgressCategory
+        android:persistent="false"
+        android:title="@string/wifi_access_points"
+        android:key="access_points"
+        android:dependency="enable_wifi" />
+    <Preference
+        android:persistent="false"
+        android:title="@string/wifi_add_network"
+        android:key="add_network"
+        android:dependency="enable_wifi" />
+</PreferenceScreen>

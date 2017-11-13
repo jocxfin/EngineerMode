@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="70.0dip"
+        android:gravity="center"
+        android:id="@id/simcardtest"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/electronicpurse"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="20.0sp"
+            android:gravity="center"
+            android:id="@id/pcbshow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pcb_num" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip">
+
+            <TextView
+                android:textSize="20.0sp"
+                android:gravity="center"
+                android:id="@id/cardemulationtextview"
+                android:visibility="gone"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:text="@string/nfc_cardemulation" />
+
+            <CheckBox
+                android:id="@id/cardemulationcheckbox"
+                android:visibility="gone"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:textSize="20.0sp"
+                android:gravity="center"
+                android:id="@id/sendcarrier"
+                android:visibility="gone"
+                android:layout_width="140.0dip"
+                android:layout_height="70.0dip"
+                android:text="@string/nfc_sendcarrier"
+                android:layout_below="@id/cardemulationtextview" />
+
+            <CheckBox
+                android:id="@id/sendcarriercheckbox"
+                android:visibility="gone"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_below="@id/cardemulationcheckbox"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:textSize="20.0sp"
+                android:gravity="center"
+                android:id="@id/readmodetextview"
+                android:visibility="gone"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:text="@string/nfc_readmode"
+                android:layout_below="@id/sendcarrier" />
+
+            <CheckBox
+                android:id="@id/readmodecheckbox"
+                android:visibility="gone"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_below="@id/sendcarriercheckbox"
+                android:layout_alignParentRight="true" />
+
+            <Button
+                android:textSize="20.0sp"
+                android:id="@id/nfcreadlabel"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:text="@string/nfc_readlabel"
+                android:layout_below="@id/readmodecheckbox" />
+
+            <Button
+                android:textSize="20.0sp"
+                android:id="@id/card_emulation"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:text="@string/nfc_card_emulation_test"
+                android:layout_below="@id/nfcreadlabel" />
+
+            <TextView
+                android:textSize="70.0sp"
+                android:gravity="center"
+                android:id="@id/resulttextview"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/card_emulation"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@id/stub_judgement_buttons"
+        android:layout="@layout/judgetment_buttons"
+        android:inflatedId="@id/panel_judgement_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

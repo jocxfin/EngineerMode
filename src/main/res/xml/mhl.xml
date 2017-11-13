@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:persistent="true"
+        android:entries="@array/mhl_entries"
+        android:title="@string/resolution_setting"
+        android:key="resolution_list"
+        android:summary="@string/resolution_setting"
+        android:entryValues="@array/mhl_entry_values" />
+    <CheckBoxPreference
+        android:persistent="true"
+        android:title="@string/hdcp_setting_title"
+        android:key="hdcp_switcher"
+        android:summaryOn="@string/hdcp_setting_summary_on"
+        android:summaryOff="@string/hdcp_setting_summary_off" />
+</PreferenceScreen>

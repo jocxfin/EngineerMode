@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="15.0sp"
+        android:id="@id/text_current_angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_gyroSens"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="15.0sp"
+        android:id="@id/text_gyroSens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="24.0sp"
+        android:id="@id/text_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/gyro_calibrate_btn_start"
+        android:layout_above="@id/save"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/gyro_calibrate_btn_save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

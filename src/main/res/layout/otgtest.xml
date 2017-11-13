@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="18.0sp"
+        android:id="@id/otgtesttipstextView"
+        android:layout_width="wrap_content"
+        android:layout_height="110.0dip"
+        android:text="@string/otgtesttips" />
+
+    <TextView
+        android:textSize="30.0sp"
+        android:id="@id/otgtestresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otgstartcheck"
+        android:layout_below="@id/otgtesttipstextView" />
+
+    <TextView
+        android:textSize="30.0sp"
+        android:id="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otgstartcheck"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

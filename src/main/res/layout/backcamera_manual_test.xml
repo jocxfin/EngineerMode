@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+    android:background="#ff000000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.android.engineeringmode.autotest.CameraPreview
+        android:layout_gravity="center"
+        android:id="@id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:textColor="#ffff0000"
+                    android:id="@id/red"
+                    android:layout_width="60.0dip"
+                    android:layout_height="50.0dip"
+                    android:textOn="@string/red"
+                    android:textOff="@string/red" />
+
+                <ToggleButton
+                    android:textColor="#ff00ff00"
+                    android:id="@id/green"
+                    android:layout_width="60.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:textOn="@string/green"
+                    android:textOff="@string/green" />
+
+                <ToggleButton
+                    android:textColor="#ff0000ff"
+                    android:id="@id/blue"
+                    android:layout_width="60.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:textOn="@string/blue"
+                    android:textOff="@string/blue" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</FrameLayout>

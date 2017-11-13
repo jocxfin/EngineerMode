@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SurfaceView
+        android:layout_gravity="center"
+        android:id="@id/preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/tv_switch_onX"
+            android:padding="10.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/tv_switch_onY"
+            android:padding="10.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_switch_onX"
+            android:layout_alignTop="@id/tv_switch_onX" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/tv_switch_offY"
+            android:padding="10.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_switch_onX"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@id/tv_switch_offX"
+            android:padding="10.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_switch_offY"
+            android:layout_alignTop="@id/tv_switch_onX" />
+
+        <TextView
+            android:textSize="25.0sp"
+            android:id="@id/tv_result"
+            android:padding="10.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

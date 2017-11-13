@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@id/keypad_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:id="@id/Keypad_test"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/keypad_test" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keypad_top">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="left"
+                android:id="@id/Key_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KEY_1" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@id/Key_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="@string/KEY_2" />
+
+            <TextView
+                android:layout_gravity="right"
+                android:id="@id/Key_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="@string/KEY_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="left"
+                android:id="@id/Key_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KEY_4" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@id/Key_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="@string/KEY_5" />
+
+            <TextView
+                android:layout_gravity="right"
+                android:id="@id/Key_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="@string/KEY_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="left"
+                android:id="@id/Key_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KEY_7" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@id/Key_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="@string/KEY_8" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:gravity="center"
+            android:id="@id/btn_skip"
+            android:focusable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skip" />
+    </LinearLayout>
+</RelativeLayout>

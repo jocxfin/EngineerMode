@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/background_style">
+
+        <Button
+            android:textSize="34.0px"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/Audio_ModeSetting_Mai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:text="@string/audio_test_inpluse" />
+
+        <Spinner
+            android:id="@id/Audio_ModeSetting"
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginTop="20.0dip" />
+
+        <TextView
+            android:id="@id/Audio_ModeSetting_TextView"
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/Audio_ModeSetting_TextView" />
+
+        <EditText
+            android:id="@id/Audio_ModeSetting_EditText"
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/Audio_ModeSetting_EditText"
+            android:numeric="integer" />
+
+        <Button
+            android:id="@id/Audio_ModeSetting_Button"
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/Audio_ModeSetting_Button" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/grip_sensor_test_title" />
+    <Preference android:title="@string/grip_sensor_calibrate_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.GripSensorCalibrateTest" />
+    </Preference>
+    <Preference android:title="@string/grip_sensor_manual_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.GripSensorManualTest" />
+    </Preference>
+</PreferenceScreen>

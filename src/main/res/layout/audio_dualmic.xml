@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="34.0px"
+        android:paddingLeft="6.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/audio_dual_ns" />
+
+    <Button
+        android:textSize="34.0px"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/audio_dual_open"
+        android:layout_width="128.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/open" />
+
+    <Button
+        android:textSize="34.0px"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/audio_dual_close"
+        android:layout_width="128.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:text="@string/close" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/audio_dual_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip">
+
+        <RadioGroup
+            android:orientation="vertical"
+            android:id="@id/audio_dual_select"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:textSize="34.0px"
+                android:textColor="@color/online_settings_white"
+                android:id="@id/audio_dual_pri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_dual_pri_mic"
+                android:layout_weight="1.0" />
+
+            <RadioButton
+                android:textSize="34.0px"
+                android:textColor="@color/online_settings_white"
+                android:id="@id/audio_dual_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_dual_sec_mic"
+                android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="40.0dip"
+                android:gravity="center"
+                android:id="@id/tv_test_backlight_showinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@id/sb_autotest_set_brightness"
+                android:background="#ff5a5a5a"
+                android:paddingLeft="5.0px"
+                android:paddingRight="5.0px"
+                android:paddingBottom="4.0px"
+                android:layout_width="fill_parent"
+                android:layout_height="36.0px"
+                style="?android:attr/progressBarStyleHorizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

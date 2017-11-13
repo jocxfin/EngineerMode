@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/gsensor_angle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="2.0dip"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="30.0dip"
+                android:id="@id/tv_angle_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gsensor_angle" />
+
+            <TextView
+                android:textSize="30.0dip"
+                android:gravity="center"
+                android:id="@id/tv_angle_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/gensor_x"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:layout_below="@id/gsensor_angle"
+            android:layout_alignLeft="@id/gsensor_angle"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:id="@id/gsensor_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gsensor_angle_x" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/tv_angle_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/gensor_y"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:layout_below="@id/gensor_x"
+            android:layout_alignLeft="@id/gensor_x"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:id="@id/gsensor_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gsensor_angle_y" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/tv_angle_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/gensor_z"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:layout_below="@id/gensor_y"
+            android:layout_alignLeft="@id/gensor_y"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:id="@id/gsensor_z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gsensor_angle_z" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/tv_angle_z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:layout_below="@id/gensor_z"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="30.0dip"
+                android:gravity="center"
+                android:id="@id/tv_screenorient_info"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/gsensor_screenorient"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="30.0dip"
+                android:gravity="center"
+                android:id="@id/tv_screenorient_show"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/g_bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@id/g_btn_exit_test"
+                android:focusable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/skip"
+                style="@style/style_bottom_button_right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="40.0dip"
+        android:textColor="#ff00ff00"
+        android:gravity="center"
+        android:id="@id/result"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip" />
+</LinearLayout>

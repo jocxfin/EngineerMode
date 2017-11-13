@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@id/WiFi_WordAccess_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WiFi_WordAccess_Text" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/WiFi_addr_Text"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_addr_Text" />
+
+            <EditText
+                android:id="@id/WiFi_addr_Content"
+                android:layout_width="215.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_addr_Content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/WiFi_value_Text"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_value_Text" />
+
+            <EditText
+                android:id="@id/WiFi_value_Content"
+                android:layout_width="215.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_value_Content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/WiFi_Read_Word"
+                android:layout_width="159.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_Read_Word" />
+
+            <Button
+                android:id="@id/WiFi_Write_Word"
+                android:layout_width="159.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_Write_Word" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/WiFi_StringAccess_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WiFi_StringAccess_Text" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/WiFi_addr_Text_String"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_addr_Text_String" />
+
+            <EditText
+                android:id="@id/WiFi_addr_Content_String"
+                android:layout_width="215.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_addr_Content_String" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/WiFi_length_Text_String"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_length_Text_String" />
+
+            <EditText
+                android:id="@id/WiFi_length_Content_String"
+                android:layout_width="215.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_length_Content_String"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/WiFi_value_Text_String"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_value_Text_String" />
+
+            <EditText
+                android:id="@id/WiFi_value_Content_String"
+                android:layout_width="215.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_value_Content_String" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/WiFi_Read_String"
+                android:layout_width="159.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_Read_Word" />
+
+            <Button
+                android:id="@id/WiFi_Write_String"
+                android:layout_width="159.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_Write_Word" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/WiFi_SaveBtn"
+                android:layout_width="159.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_SaveBtn" />
+
+            <Button
+                android:id="@id/WiFi_BurnBtn"
+                android:layout_width="159.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_BurnBtn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/WiFi_ReadAllBtn"
+                android:layout_width="159.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_ReadAllBtn" />
+
+            <Button
+                android:id="@id/WiFi_ClearBtn"
+                android:layout_width="159.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFi_ClearBtn" />
+        </LinearLayout>
+
+        <ScrollView
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@id/WiFi_ShowWindow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</ScrollView>

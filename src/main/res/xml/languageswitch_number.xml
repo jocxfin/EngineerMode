@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <language
+        name="0"
+        action_order="*#6776001#"
+        language_str="en_US" />
+    <language
+        name="1"
+        action_order="*#6776007#"
+        language_str="ru_RU" />
+    <language
+        name="2"
+        action_order="*#67760052#"
+        language_str="es_MX" />
+    <language
+        name="3"
+        action_order="*#67760055#"
+        language_str="pt_BR" />
+    <language
+        name="4"
+        action_order="*#67760066#"
+        language_str="th_TH" />
+    <language
+        name="5"
+        action_order="*#67760062#"
+        language_str="in_IN" />
+    <language
+        name="6"
+        action_order="*#67760084#"
+        language_str="vi_VI" />
+    <language
+        name="7"
+        action_order="*#67760086#"
+        language_str="zh_CN" />
+    <language
+        name="8"
+        action_order="*#67760886#"
+        language_str="zh_TW" />
+</resources>

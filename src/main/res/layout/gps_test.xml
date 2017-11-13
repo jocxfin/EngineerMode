@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="22.0sp"
+            android:id="@id/gps_info"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="22.0sp"
+            android:id="@id/gps_Accuracy"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="22.0sp"
+            android:id="@id/gps_Latitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="22.0sp"
+            android:id="@id/gps_Longitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="22.0sp"
+            android:id="@id/gps_inview"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="22.0sp"
+            android:id="@id/gps_inuse"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="22.0sp"
+            android:id="@id/gps_speed"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="22.0sp"
+            android:id="@id/gps_time"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="22.0sp"
+        android:id="@id/gps_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <ListView
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="27.0sp"
+            android:gravity="center"
+            android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/gps_msg" />
+    </FrameLayout>
+</LinearLayout>

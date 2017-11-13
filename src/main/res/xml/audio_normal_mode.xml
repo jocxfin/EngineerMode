@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/audio_test"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/audio_test_inpluse"
+        android:key="key_audio_test_inpluse" />
+    <PreferenceScreen
+        android:title="@string/audio_test_type_speech"
+        android:key="key_audio_normal_mode_speech" />
+    <PreferenceScreen
+        android:title="@string/audio_test_type_melody"
+        android:key="key_audio_normal_mode_melody" />
+    <PreferenceScreen
+        android:title="@string/audio_test_type_sidetone"
+        android:key="key_audio_normal_mode_sidetone" />
+    <PreferenceScreen
+        android:title="@string/audio_test_type_keytone"
+        android:key="key_audio_normal_mode_keytone" />
+</PreferenceScreen>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="40.0dip"
+                android:gravity="center"
+                android:id="@id/tv_current_info"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/charger_elec"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="40.0dip"
+                android:gravity="center"
+                android:id="@id/tv_current_show"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/l_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="40.0dip"
+            android:textColor="#ff00ff00"
+            android:gravity="center"
+            android:id="@id/tv_result_show"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

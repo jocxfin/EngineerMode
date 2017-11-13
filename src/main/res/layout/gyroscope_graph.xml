@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:textSize="24.0sp"
+                    android:id="@id/text_x"
+                    android:layout_width="30.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/text_x" />
+
+                <ImageView
+                    android:id="@id/color_x"
+                    android:layout_width="50.0dip"
+                    android:layout_height="5.0dip" />
+
+                <TextView
+                    android:textSize="24.0sp"
+                    android:id="@id/text_y"
+                    android:layout_width="30.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/text_y" />
+
+                <ImageView
+                    android:id="@id/color_y"
+                    android:layout_width="50.0dip"
+                    android:layout_height="4.0dip" />
+
+                <TextView
+                    android:textSize="24.0sp"
+                    android:id="@id/text_z"
+                    android:layout_width="30.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/text_z" />
+
+                <ImageView
+                    android:id="@id/color_z"
+                    android:layout_width="50.0dip"
+                    android:layout_height="3.0dip" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16.0sp"
+                android:id="@id/data_x"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:maxLines="1" />
+
+            <TextView
+                android:textSize="16.0sp"
+                android:id="@id/data_y"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:maxLines="1" />
+
+            <TextView
+                android:textSize="16.0sp"
+                android:id="@id/data_z"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <com.android.engineeringmode.gyroscopetest.WaveView
+            android:id="@id/wave"
+            android:layout_width="fill_parent"
+            android:layout_height="300.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="30.0sp"
+        android:textColor="#ff00ff00"
+        android:gravity="center_horizontal"
+        android:id="@id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pass"
+        android:maxLines="1"
+        android:layout_below="@id/top" />
+
+    <Button
+        android:id="@id/g_btn_exit_test"
+        android:focusable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/style_bottom_button_right" />
+</RelativeLayout>

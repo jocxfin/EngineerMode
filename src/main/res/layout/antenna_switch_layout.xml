@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btn_on_gpio_01"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_on" />
+
+        <Button
+            android:id="@id/btn_off_gpio_01"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_off" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_gpio_01" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btn_on_gpio_02"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_on" />
+
+        <Button
+            android:id="@id/btn_off_gpio_02"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_off" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_gpio_02" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btn_on_gpio_03"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_on" />
+
+        <Button
+            android:id="@id/btn_off_gpio_03"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_off" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_gpio_03" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btn_on_gpio_04"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_on" />
+
+        <Button
+            android:id="@id/btn_off_gpio_04"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_off" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_gpio_04" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btn_on_gpio_05"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_on" />
+
+        <Button
+            android:id="@id/btn_off_gpio_05"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_off" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_gpio_05" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btn_on_gpio_06"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_on" />
+
+        <Button
+            android:id="@id/btn_off_gpio_06"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_off" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_gpio_06" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btn_on_gpio_07"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_on" />
+
+        <Button
+            android:id="@id/btn_off_gpio_07"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/antenna_switch_btn_off" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_gpio_07" />
+    </LinearLayout>
+</LinearLayout>

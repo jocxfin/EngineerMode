@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="40.0dip"
+            android:gravity="center"
+            android:id="@id/amplitude"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/amplitude_init" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <Button
+            android:textSize="50.0px"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/openmainmic"
+            android:layout_width="200.0dip"
+            android:layout_height="60.0dip"
+            android:text="@string/openmainmic" />
+
+        <Button
+            android:textSize="50.0px"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/opensecondmic"
+            android:layout_width="200.0dip"
+            android:layout_height="60.0dip"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/opensecondmic" />
+
+        <Button
+            android:textSize="50.0px"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/openancmic"
+            android:layout_width="200.0dip"
+            android:layout_height="60.0dip"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/openancmic" />
+    </LinearLayout>
+</LinearLayout>

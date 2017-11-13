@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="18.0sp"
+    android:gravity="center_vertical"
+    android:id="@id/text1"
+    android:paddingLeft="?android:listPreferredItemPaddingLeft"
+    android:paddingRight="?android:listPreferredItemPaddingRight"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:listPreferredItemHeightSmall"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

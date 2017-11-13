@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/earphone_btn"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:textSize="28.0px"
+            android:orientation="vertical"
+            android:id="@id/earphone_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="34.0px"
+                android:layout_gravity="center_horizontal"
+                android:id="@id/earphone_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manual_earphone_info" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@id/earphone_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/autotest_exit"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/charge_mode_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/charge_mode_title" />
+
+        <Button
+            android:id="@id/discharge_mode_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discharge_mode_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_gravity="center"
+            android:id="@id/summary_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <com.android.engineeringmode.autotest.CameraPreview
+            android:layout_gravity="center"
+            android:id="@id/camera_preview"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

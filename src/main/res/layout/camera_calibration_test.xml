@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/content_main" />
+
+    <view
+        android:layout_gravity="center"
+        android:id="@id/timer_view"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        class="com.android.engineeringmode.manualtest.cameratest.CameraCalibrationTest$TimerView" />
+
+    <ImageButton
+        android:enabled="false"
+        android:layout_gravity="bottom|center"
+        android:id="@id/oem_camera_cal_shutter_btn"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50.0dip"
+        android:src="@drawable/btn_videoing_tk_pics_drawable" />
+</FrameLayout>

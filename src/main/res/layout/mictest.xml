@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="40.0dip"
+            android:gravity="center"
+            android:id="@id/tv_mictest_infoshow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="50.0dip"
+        android:paddingRight="50.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <Button
+            android:gravity="center"
+            android:id="@id/btn_begin_record"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mic_start_rcd"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:gravity="center"
+            android:id="@id/btn_stop_record"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mic_stop_rcd"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:gravity="center"
+            android:id="@id/btn_start_play"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mic_start_play"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:gravity="center"
+            android:id="@id/btn_stop_play"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mic_stop_play"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

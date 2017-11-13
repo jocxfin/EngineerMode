@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="2"
+        android:layout_weight="1.0">
+
+        <TableRow>
+
+            <Button
+                android:textSize="50.0px"
+                android:id="@id/laser_focus_offset_calibrate_text"
+                android:layout_width="30.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="50.0px"
+                android:id="@id/result_laser_focus_offset_calibrate_text"
+                android:layout_width="60.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:textSize="50.0px"
+                android:id="@id/laser_focus_crosstalk_calibrate_text"
+                android:layout_width="30.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="50.0px"
+                android:id="@id/result_laser_focus_crosstalk_calibrate_text"
+                android:layout_width="60.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:textSize="50.0px"
+                android:id="@id/laser_focus_reset"
+                android:layout_width="30.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="50.0px"
+                android:id="@id/result_laser_focus_reset_text"
+                android:layout_width="60.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TextView
+            android:textSize="50.0px"
+            android:id="@id/note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </TableLayout>
+</LinearLayout>

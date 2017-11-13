@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/log_test"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/oneplus_logkit"
+        android:key="key_oppo_logkit" />
+    <CheckBoxPreference
+        android:title="@string/assertSwitch"
+        android:key="assert" />
+    <CheckBoxPreference
+        android:title="@string/qeassertSwitch"
+        android:key="qeassert" />
+    <Preference
+        android:title="@string/device_log"
+        android:key="device_log">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.qualcomm.DeviceLog" />
+    </Preference>
+    <CheckBoxPreference
+        android:title="@string/dumpSwitch"
+        android:key="dump" />
+    <CheckBoxPreference
+        android:title="@string/systemmonitorSwitch"
+        android:key="systemmonitor" />
+    <Preference
+        android:title="@string/modem_crash"
+        android:key="key_modem_crash"
+        android:summary="@string/modem_crash_default" />
+    <Preference
+        android:title="@string/modem_version"
+        android:key="key_modem_version"
+        android:summary="@string/modem_version_default" />
+    <Preference
+        android:title="@string/wifi_version"
+        android:key="key_wifi_version"
+        android:summary="@string/wifi_version_default" />
+    <Preference
+        android:title="@string/bt_version"
+        android:key="key_bt_version"
+        android:summary="@string/bt_version_default" />
+    <CheckBoxPreference
+        android:title="@string/btStackLogSwitch"
+        android:key="btstacklog" />
+    <Preference
+        android:title="@string/oneclick_connectivity_log"
+        android:key="key_oneclick_logkit" />
+</PreferenceScreen>

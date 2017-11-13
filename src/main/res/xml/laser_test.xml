@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/laser_focus_test_title" />
+    <Preference android:title="@string/laser_focus_calibrate_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.LaserFocusCalibrateTest" />
+    </Preference>
+    <Preference android:title="@string/laser_focus_basic_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.LaserFocusBasicTest" />
+    </Preference>
+    <Preference android:title="@string/laser_focus_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.LaserFocusTest" />
+    </Preference>
+</PreferenceScreen>

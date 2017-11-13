@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s0_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s0" />
+
+            <EditText
+                android:id="@id/s0_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s0">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s1_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s1" />
+
+            <EditText
+                android:id="@id/s1_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s1">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s2_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s2" />
+
+            <EditText
+                android:id="@id/s2_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s2">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s3_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s3" />
+
+            <EditText
+                android:id="@id/s3_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s3">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s4_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s4" />
+
+            <EditText
+                android:id="@id/s4_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s4">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s5_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s5" />
+
+            <EditText
+                android:id="@id/s5_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s5">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s6_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s6" />
+
+            <EditText
+                android:id="@id/s6_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s6">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s7_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s7" />
+
+            <EditText
+                android:id="@id/s7_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s7">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/update_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_update" />
+
+            <EditText
+                android:id="@id/update_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_rep"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_update">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/reptext"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_rep" />
+
+            <EditText
+                android:id="@id/rep_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout_s_rep"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_rep">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/s_rep_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wf_s_rep" />
+
+            <EditText
+                android:id="@id/s_rep_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout_s_rep">
+
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/vibrate_vol_text"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/vibrate_vol" />
+
+            <EditText
+                android:id="@id/vibrate_vol_edit"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="14.0sp"
+            android:id="@id/vibrate_vol"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_below="@id/LinearLayout" />
+
+        <Button
+            android:id="@id/start_weak_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_weak_vibrate"
+            android:layout_below="@id/vibrate_vol"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@id/start_middle_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_middle_vibrate"
+            android:layout_below="@id/start_weak_vibrate"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@id/start_strong_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_strong_vibrate"
+            android:layout_below="@id/start_middle_vibrate"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@id/start_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_vibrate"
+            android:layout_below="@id/start_strong_vibrate"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@id/stop_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_vibrate"
+            android:layout_below="@id/start_vibrate"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</ScrollView>

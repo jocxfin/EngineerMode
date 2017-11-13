@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@id/read_critical_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_critical_data" />
+
+    <Button
+        android:id="@id/save_log"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Save_Log_To_SDcard" />
+
+    <EditText
+        android:enabled="false"
+        android:id="@id/log_box"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:inputType="textMultiLine" />
+</LinearLayout>

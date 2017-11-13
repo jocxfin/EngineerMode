@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/autoaging_title"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:title="@string/autoaging_test_start"
+        android:key="start"
+        android:summary="@string/autoaging_test_summary">
+        <intent android:action="com.android.engineeringmode.autoaging.AutoAgingActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/autoaging_test_settings"
+        android:key="settings"
+        android:summary="@string/autoaging_test_settings_summary">
+        <intent android:action="com.android.engineeringmode.autoaging.AutoAgingSettingsActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>

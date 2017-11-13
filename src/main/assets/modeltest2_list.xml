@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="PDAF Cam_EEPRom test">
+            <intent>com.android.engineeringmode.manualtest.CheckPdafInfo</intent>
+        </ModelItem>
+
+        <ModelItem id="Wifi test">
+            <intent>com.android.engineeringmode.wifitest.ModelWifiConnectTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Vibrator test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelVibratorTest</intent>
+        </ModelItem>
+
+        <ModelItem id="SimDetect test">
+            <intent>com.android.engineeringmode.manualtest.SimCardTest</intent>
+        </ModelItem>
+    </Response>
+</kml>

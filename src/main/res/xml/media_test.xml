@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/media_test"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/audio_1"
+        android:key="audio_test_1" />
+    <Preference
+        android:title="@string/audio_2"
+        android:key="audio_test_2" />
+    <Preference
+        android:title="@string/vedio_1"
+        android:key="vedio_test_1" />
+</PreferenceScreen>

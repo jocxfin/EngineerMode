@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="34.0px"
+                android:gravity="center"
+                android:id="@id/tv_autotest_show"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/ButtonBar">
+
+            <Button
+                android:id="@id/btn_start_autotest"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/startautotest"
+                android:layout_weight="1.0"
+                style="@style/style_bottom_button_left" />
+
+            <Button
+                android:id="@id/btn_autotest_report"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/autotest_report"
+                android:layout_weight="1.0"
+                style="@style/style_bottom_button_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

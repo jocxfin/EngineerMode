@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/gyro_graph"
+        android:key="gyro_graph"
+        android:summary="@string/gyro_graph_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.gyroscopetest.GyroscopeGraph" />
+    </Preference>
+    <Preference
+        android:title="@string/gyro_self_test"
+        android:key="gyro_self_test"
+        android:summary="@string/gyro_self_test_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.gyroscopetest.GyroscopeSelfTest" />
+    </Preference>
+    <Preference
+        android:title="@string/gyro_display"
+        android:key="gyro_display">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.gyroscopetest.GyroDispalyData" />
+    </Preference>
+</PreferenceScreen>

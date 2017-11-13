@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="Lcd test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelLcdColorTest</intent>
+        </ModelItem>
+    </Response>
+</kml>

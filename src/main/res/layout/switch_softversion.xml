@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="300.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:textSize="27.0sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/europe"
+        android:layout_width="128.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/europe_edition" />
+
+    <Button
+        android:textSize="27.0sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/india"
+        android:layout_width="128.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:text="@string/india_edition" />
+</LinearLayout>

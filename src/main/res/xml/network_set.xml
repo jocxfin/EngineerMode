@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/networkset_title"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/sim_select_entries"
+        android:title="@string/sim_select"
+        android:key="sim_select"
+        android:defaultValue="0"
+        android:entryValues="@array/sim_select_entriesvalue" />
+    <Preference
+        android:title="@string/networkset_gsm"
+        android:key="network_gsm" />
+    <Preference
+        android:title="@string/networkset_info"
+        android:key="network_info" />
+    <ListPreference
+        android:entries="@array/network_service_mode"
+        android:title="@string/networkset_service"
+        android:key="network_service"
+        android:entryValues="@array/network_service_mode_values" />
+    <ListPreference
+        android:entries="@array/network_rat_mode"
+        android:title="@string/networkset_rat"
+        android:key="network_rat"
+        android:entryValues="@array/network_rat_mode_values" />
+</PreferenceScreen>

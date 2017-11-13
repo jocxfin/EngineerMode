@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/msensor_angle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="10.0dip"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="40.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msensor_test_title" />
+
+        <TextView
+            android:textSize="40.0dip"
+            android:gravity="center"
+            android:id="@id/m_angle_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/mensor_x"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:layout_below="@id/msensor_angle"
+        android:layout_alignLeft="@id/msensor_angle"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="27.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gsensor_angle_x" />
+
+        <TextView
+            android:textSize="27.0sp"
+            android:gravity="center"
+            android:id="@id/m_angle_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/mensor_y"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:layout_below="@id/mensor_x"
+        android:layout_alignLeft="@id/mensor_x"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="27.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gsensor_angle_y" />
+
+        <TextView
+            android:textSize="27.0sp"
+            android:gravity="center"
+            android:id="@id/m_angle_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/mensor_z"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:layout_below="@id/mensor_y"
+        android:layout_alignLeft="@id/mensor_y"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="27.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gsensor_angle_z" />
+
+        <TextView
+            android:textSize="27.0sp"
+            android:gravity="center"
+            android:id="@id/m_angle_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/mensor_dir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:layout_below="@id/mensor_z"
+        android:layout_alignLeft="@id/mensor_z"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="27.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msensor_direction" />
+
+        <TextView
+            android:textSize="27.0sp"
+            android:gravity="center"
+            android:id="@id/m_angle_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_below="@id/mensor_dir"
+        android:layout_alignLeft="@id/mensor_dir"
+        style="@style/background_style">
+
+        <TextView
+            android:textSize="27.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msensor_sensitivity" />
+
+        <TextView
+            android:textSize="27.0sp"
+            android:gravity="center"
+            android:id="@id/m_sensitivity_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:background="#ff000000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.android.engineeringmode.manualtest.OemCameraPreview
+        android:layout_gravity="center"
+        android:id="@id/oppo_dlc_main_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageButton
+        android:enabled="false"
+        android:id="@id/oppo_dlc_shutter_btn"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50.0dip"
+        android:src="@drawable/btn_videoing_tk_pics_drawable"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

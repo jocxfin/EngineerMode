@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/back_light_bacakground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/back_light_title" />
+
+        <Button
+            android:id="@id/backlight_close"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/backlight_open" />
+
+        <Button
+            android:id="@id/backlight_open"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/backlight_close" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@id/stub_judgement_buttons"
+        android:layout="@layout/judgetment_buttons"
+        android:inflatedId="@id/panel_judgement_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

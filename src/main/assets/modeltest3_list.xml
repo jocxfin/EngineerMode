@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="Gensor test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelGsensorTest</intent>
+        </ModelItem>
+
+        <ModelItem id="GyroscopeGraph">
+            <intent>com.android.engineeringmode.manualtest.modeltest.GyroscopeGraph</intent>
+        </ModelItem>
+
+        <ModelItem id="MSensorAuto Test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelMSensorAutoTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Proximity Sensor">
+            <intent>com.android.engineeringmode.manualtest.SensorTextProx</intent>
+        </ModelItem>
+
+        <ModelItem id="LightSensor Test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelLightSensor</intent>
+        </ModelItem>
+
+        <ModelItem id="TouchScreen test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelTouchScreeen</intent>
+        </ModelItem>
+
+        <ModelItem id="Holzer Test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelHolzerTest</intent>
+        </ModelItem>
+    </Response>
+</kml>

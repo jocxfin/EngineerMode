@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="Early Fabrication Key Test">
+            <intent>com.android.engineeringmode.autotest.ScreenComponentKeyTest</intent>
+        </ModelItem>
+        <ModelItem id="Lcd test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelLcdColorTest</intent>
+        </ModelItem>
+        <ModelItem id="TouchScreen test">
+            <intent>com.android.engineeringmode.touchscreen.AutoTouchScreenTestWithButton</intent>
+        </ModelItem>
+
+    </Response>
+</kml>

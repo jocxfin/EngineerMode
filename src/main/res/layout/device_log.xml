@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@id/size_et_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25.0dip"
+        android:text="@string/device_log_size_notice" />
+
+    <EditText
+        android:id="@id/size_et"
+        android:layout_width="100.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:singleLine="true"
+        android:maxLength="4"
+        android:layout_toRightOf="@id/size_et_title"
+        android:layout_alignBottom="@id/size_et_title"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@id/number_et_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25.0dip"
+        android:text="@string/device_log_number_notice"
+        android:layout_below="@id/size_et_title"
+        android:layout_alignLeft="@id/size_et_title" />
+    "
+
+    <EditText
+        android:id="@id/number_et"
+        android:layout_width="100.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:singleLine="true"
+        android:maxLength="4"
+        android:layout_toRightOf="@id/number_et_title"
+        android:layout_alignBottom="@id/number_et_title"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@id/type_radio_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_below="@id/number_et" />
+
+    <Button
+        android:id="@id/rm_old_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rm_old_logs"
+        android:layout_below="@id/type_radio_rg" />
+
+    <Button
+        android:id="@id/device_log_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_log_switch"
+        android:layout_below="@id/rm_old_logs"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@id/device_log_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_log_close"
+        android:layout_below="@id/device_log_switch"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

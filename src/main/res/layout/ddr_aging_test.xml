@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/btn_quit"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="24.0sp"
+            android:id="@id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <Button
+        android:id="@id/btn_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="19.0dip"
+        android:text="@string/exitTest"
+        android:layout_alignBaseline="@id/btn_quit"
+        android:layout_alignBottom="@id/btn_quit"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginTop="9.0dip"
+        android:text="@string/starttest"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

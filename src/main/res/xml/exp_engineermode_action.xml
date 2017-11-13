@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <action
+        name="0"
+        action_order="*#36446337#"
+        action_str="com.android.engineeringmode.EngineeringMode" />
+    <action
+        name="1"
+        action_order="*#800#"
+        action_str="com.android.engineeringmode.qualcomm.LogSwitch" />
+    <action
+        name="2"
+        action_order="*#807#"
+        action_str="com.android.engineeringmode.autotest.AutoTest" />
+    <action
+        name="3"
+        action_order="*#808#"
+        action_str="com.android.engineeringmode.manualtest.ManualTest" />
+    <action
+        name="4"
+        action_order="*#805#"
+        action_str="com.android.engineeringmode.bluetoothtest.BluetoothTest" />
+    <action
+        name="5"
+        action_order="*#804#"
+        action_str="com.android.engineeringmode.NetworkSearch" />
+    <action
+        name="6"
+        action_order="*#803#"
+        action_str="com.android.engineeringmode.wifitest.WifiSettings" />
+    <action
+        name="7"
+        action_order="*#802#"
+        action_str="com.android.engineeringmode.gps.GpsActivity" />
+    <action
+        name="8"
+        action_order="*#806#"
+        action_str="com.android.engineeringmode.autoaging.AutoAgingMainListActivity" />
+    <action
+        name="9"
+        action_order="*#8778#"
+        action_str="com.android.engineeringmode.manualtest.MasterClear" />
+    <action
+        name="10"
+        action_order="*#99#"
+        action_str="com.android.engineeringmode.KeepSrceenOn" />
+    <action
+        name="11"
+        action_order="*#6776#"
+        action_str="com.android.engineeringmode.CheckSoftwareInfo" />
+    <action
+        name="12"
+        action_order="*#66#"
+        action_str="com.android.engineeringmode.IMeiAndPcbCheck" />
+    <action
+        name="13"
+        action_order="*#888#"
+        action_str="com.android.engineeringmode.PcbShow" />
+    <action
+        name="14"
+        action_order="*#809#"
+        action_str="com.android.engineeringmode.echotest.EchoTest" />
+    <action
+        name="15"
+        action_order="*##*8110#"
+        action_str="com.android.engineeringmode.qualcomm.OtaSwitch" />
+    <action
+        name="16"
+        action_order="*#801#"
+        action_str="com.android.engineeringmode.qualcomm.DiagEnabled" />
+    <action
+        name="17"
+        action_order="*#008#"
+        action_str="com.android.engineeringmode.LanguageSwitchToChineseActivity" />
+    <action
+        name="18"
+        action_order="*#67760044#"
+        action_str="com.android.engineeringmode.LanguageSwitchToEnglishActivity" />
+    <action
+        name="19"
+        action_order="*#268#"
+        action_str="com.android.engineeringmode.qualcomm.QualCommActivity" />
+    <action
+        name="20"
+        action_order="*#900#"
+        action_str="com.android.engineeringmode.BackCameraAdjusting" />
+    <action
+        name="21"
+        action_order="*#67766776#"
+        action_str="com.android.engineeringmode.OppoConnectionADBActivity" />
+    <action
+        name="22"
+        action_order="*#12345#"
+        action_str="com.android.activation.action.STOP_SERVICE" />
+    <action
+        name="23"
+        action_order="*#810#"
+        action_str="com.android.engineeringmode.SwitchSetupWizardActivity" />
+    <action
+        name="24"
+        action_order="*#4321#"
+        action_str="com.android.engineeringmode.LanguageSwitchToZimbabweService" />
+    <action
+        name="25"
+        action_order="*#911#"
+        action_str="android.intent.action.ACTION_REQUEST_SHUTDOWN" />
+    <action
+        name="26"
+        action_order="*#2288379#"
+        action_str="com.android.engineeringmode.BatteryExtraInfo" />
+    <action
+        name="27"
+        action_order="*#10000#"
+        action_str="com.android.engineeringmode.MarkResultShow" />
+    <action
+        name="28"
+        action_order="*#814#"
+        action_str="com.android.engineeringmode.TDSNetworkSearch" />
+    <action
+        name="29"
+        action_order="*#824#"
+        action_str="com.android.engineeringmode.WCDMANetworkSearch" />
+    <action
+        name="30"
+        action_order="*#834#"
+        action_str="com.android.engineeringmode.LTENetworkSearch" />
+    <action
+        name="31"
+        action_order="*#8011#"
+        action_str="com.android.engineeringmode.NoUI" />
+    <action
+        name="32"
+        action_order="*##*37847#"
+        action_str="com.android.engineeringmode.manualtest.DeviceListActivity" />
+    <action
+        name="33"
+        action_order="*#820#"
+        action_str="com.android.engineeringmode.DeleteNoNeedFilesActivity" />
+    <action
+        name="34"
+        action_order="*#8668#"
+        action_str="com.oppo.activation.action.STOP_ACTIVATION" />
+    <action
+        name="35"
+        action_order="*#8669#"
+        action_str="com.oppo.activation.action.START_ACTIVATION" />
+    <action
+        name="36"
+        action_order="*#677667764482#"
+        action_str="com.android.engineeringmode.UserAgentSwitchService" />
+    <action
+        name="37"
+        action_order="*#9889#"
+        action_str="com.oppo.screensaver.on" />
+    <action
+        name="38"
+        action_order="*#9886#"
+        action_str="com.oppo.screensaver.off" />
+    <action
+        name="39"
+        action_order="*#8888#"
+        action_str="com.android.engineeringmode.manualtest.MasterClear" />
+    <action
+        name="40"
+        action_order="*#789#"
+        action_str="com.android.engineeringmode.qualcomm.ClearTelcelnetlock" />
+    <action
+        name="41"
+        action_order="*#912#"
+        action_str="com.android.engineeringmode.qualcomm.RecoverTelcelnetlock" />
+</resources>

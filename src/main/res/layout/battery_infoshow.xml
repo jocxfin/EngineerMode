@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_cap_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/battery_cap"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_cap_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_vol_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/battery_voltage"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_vol_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_vol_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/battery_temp_info"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_temp_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/charger_status_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/charger_status"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/charger_status_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/charger_vol_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/charger_voltage"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/charger_vol_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/charger_type_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/charger_type"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/charger_type_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/charger_elec_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/charger_elec"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/charger_elec_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/fastcharger_type_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fastcharger"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/fastcharger_type_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_type_info"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/battery_type"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_type_show"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="27.0sp"
+        android:textColor="#ff00ff00"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/charge_pass"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass"
+        android:layout_weight="1.0" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@id/battery_magic_layout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="27.0sp"
+                android:gravity="center"
+                android:id="@id/battery_magic_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/battery_mis"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="20.0sp"
+                android:gravity="center"
+                android:id="@id/battery_magic_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

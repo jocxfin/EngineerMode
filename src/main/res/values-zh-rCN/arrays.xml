@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sim_select_entries">
+        <item>sim 1</item>
+        <item>sim 2</item>
+    </string-array>
+    <string-array name="sim_select_entriesvalue">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_set_channel_select_entries">
+        <item>Auto</item>
+        <item>900</item>
+        <item>1800</item>
+    </string-array>
+    <string-array name="network_set_channel_select_entriesvalue">
+        <item>Auto</item>
+        <item>900</item>
+        <item>1800</item>
+    </string-array>
+    <string-array name="network_info">
+        <item>RR Cell Sel</item>
+        <item>RR Ch Decr</item>
+        <item>Block Info</item>
+    </string-array>
+    <string-array name="network_service_mode">
+        <item>CS Only</item>
+        <item>PS Only</item>
+        <item>CS &amp;PS</item>
+    </string-array>
+    <string-array name="network_service_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_rat_mode">
+        <item>TD-SCDMA/LTE/GSM/WCDMA/CDMA/EVDO</item>
+        <item>TD-SCDMA/GSM/WCDMA/CDMA/EVDO</item>
+        <item>TD-SCDMA/GSM/WCDMA/LTE</item>
+        <item>TD-SCDMA/WCDMA/LTE</item>
+        <item>TD-SCDMA/GSM/WCDMA</item>
+        <item>TD-SCDMA/GSM/LTE</item>
+        <item>TD-SCDMA/GSM</item>
+        <item>TD-SCDMA/LTE</item>
+        <item>TD-SCDMA/WCDMA</item>
+        <item>TD-SCDMA only</item>
+        <item>LTE/WCDMA</item>
+        <item>LTE</item>
+        <item>通用</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>仅 EvDo</item>
+        <item>CDMA，无 EvDo 功能</item>
+        <item>CDMA/EvDo 自动选择</item>
+        <item>GSM/WCDMA 自动选择</item>
+        <item>仅 WCDMA</item>
+        <item>仅 GSM</item>
+        <item>首选 GSM/WCDMA</item>
+    </string-array>
+    <string-array name="network_rat_mode_values">
+        <item>22</item>
+        <item>21</item>
+        <item>20</item>
+        <item>19</item>
+        <item>18</item>
+        <item>17</item>
+        <item>16</item>
+        <item>15</item>
+        <item>14</item>
+        <item>13</item>
+        <item>12</item>
+        <item>11</item>
+        <item>10</item>
+        <item>9</item>
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="device_mgr_entries">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+    <string-array name="device_mgr_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="cpu_basic_frequency_entries">
+        <item>Auto</item>
+        <item>104M</item>
+        <item>208M</item>
+        <item>416M</item>
+        <item>624M</item>
+        <item>806M</item>
+    </string-array>
+    <string-array name="cpu_basic_frequency_entriesvalue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="volume_set_entries">
+        <item>音量0</item>
+        <item>音量1</item>
+        <item>音量2</item>
+        <item>音量3</item>
+        <item>音量4</item>
+        <item>音量5</item>
+        <item>音量6</item>
+    </string-array>
+    <string-array name="volume_set_entriesvalue">
+        <item>0</item>
+        <item>32</item>
+        <item>80</item>
+        <item>96</item>
+        <item>112</item>
+        <item>128</item>
+        <item>144</item>
+    </string-array>
+    <string-array name="volume_set_entry_keys">
+        <item>key_volume_0</item>
+        <item>key_volume_1</item>
+        <item>key_volume_2</item>
+        <item>key_volume_3</item>
+        <item>key_volume_4</item>
+        <item>key_volume_5</item>
+        <item>key_volume_6</item>
+    </string-array>
+    <string-array name="param_select_entries">
+        <item>参数0</item>
+        <item>参数1</item>
+        <item>参数2</item>
+        <item>参数3</item>
+        <item>参数4</item>
+        <item>参数5</item>
+        <item>参数6</item>
+    </string-array>
+    <string-array name="audio_inpulse_select">
+        <item>音量0</item>
+        <item>音量1</item>
+        <item>音量2</item>
+        <item>音量3</item>
+        <item>音量4</item>
+        <item>音量5</item>
+        <item>音量6</item>
+    </string-array>
+    <string-array name="audiotest_modeset_entries">
+        <item>耳机模式</item>
+        <item>Loudspeaker模式</item>
+        <item>蓝牙耳机</item>
+    </string-array>
+    <string-array name="audiotest_modeset_entriesvalue">
+        <item>headset</item>
+        <item>Loudspeaker</item>
+        <item>BluetoothA2dpOn</item>
+    </string-array>
+    <string-array name="rtc_test_entries">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分钟</item>
+    </string-array>
+    <string-array name="rtc_test_entriesvalue">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Open</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>正在扫描...</item>
+        <item>正在连接...</item>
+        <item>正在进行身份验证...</item>
+        <item>正在获取 IP 地址...</item>
+        <item>已连接</item>
+        <item>已暂停</item>
+        <item>正在断开连接...</item>
+        <item>已断开连接</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>正在扫描...</item>
+        <item>正在连接到 %1$s...</item>
+        <item>正在通过 %1$s 进行身份验证...</item>
+        <item>正在从 %1$s 获取 IP 地址...</item>
+        <item>已连接到 %1$s</item>
+        <item>已暂停</item>
+        <item>正在断开与 %1$s 的连接...</item>
+        <item>已断开连接</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>开放</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>弱</item>
+        <item>一般</item>
+        <item>较强</item>
+        <item>强</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>屏幕关闭时休眠</item>
+        <item>充电时永不休眠</item>
+        <item>永不休眠</item>
+    </string-array>
+    <string-array name="tx_pattern">
+        <item>0000</item>
+        <item>1111</item>
+        <item>1010</item>
+        <item>Pseudo random bit</item>
+        <item>11110000</item>
+    </string-array>
+    <string-array name="tx_channels">
+        <item>Single Frequency</item>
+        <item>79 Channel</item>
+    </string-array>
+    <string-array name="tx_Pocket_type">
+        <item>NULL(0x00)</item>
+        <item>POLL(0x01)</item>
+        <item>PHS(0x02)</item>
+        <item>DM1(0x03)</item>
+        <item>DH1(0x04)</item>
+        <item>HV1(0x05)</item>
+        <item>HV2(0x06)</item>
+        <item>HV3(0x07)</item>
+        <item>DV(0x08)</item>
+        <item>AUX(0x09)</item>
+        <item>DM3(0x0A)</item>
+        <item>DH3(0x0B)</item>
+        <item>DM5(0x0E)</item>
+        <item>DH5(0x0F)</item>
+        <item>EV3(0x17)</item>
+        <item>EV4(0x1C)</item>
+        <item>EV5(0x1D)</item>
+        <item>2-DH1(0x24)</item>
+        <item>3-DH1(0x28)</item>
+        <item>2-DH3(0x2A)</item>
+        <item>3-DH3(0x2B)</item>
+        <item>2-DH5(0x2E)</item>
+        <item>3-DH5(0x2F)</item>
+        <item>2-EV3(0x36)</item>
+        <item>3-EV3(0x37)</item>
+        <item>2-EV5(0x3C)</item>
+        <item>3-EV5(0x3D)</item>
+    </string-array>
+    <string-array name="mhl_entries">
+        <item>自动</item>
+        <item>1080p</item>
+        <item>720p</item>
+        <item>480p or 576p</item>
+    </string-array>
+    <string-array name="mhl_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="qualcomm_nv_array">
+        <item>正在对NV文件自校验</item>
+        <item>正在对NV文件自校验</item>
+        <item>正在备份NV文件</item>
+        <item>正在备份NV文件</item>
+        <item>正在备份NV文件</item>
+        <item>正在备份NV文件</item>
+        <item>正在恢复NV</item>
+        <item>正在恢复NV</item>
+        <item>正在校验备份的NV</item>
+        <item>正在恢复NV</item>
+        <item>正在备份NV</item>
+        <item>正在校验静态NV</item>
+        <item>正在恢复静态NV</item>
+        <item>正在比较动态NV</item>
+        <item>正在比较静态NV</item>
+        <item>NV dumping ...</item>
+    </string-array>
+</resources>

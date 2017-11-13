@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@id/buttonLinkTest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/RemoteControls_Link_Test" />
+
+    <Button
+        android:id="@id/buttonAlertTest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/RemoteControls_Alert_Test" />
+
+    <Button
+        android:id="@id/redButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LED_Test_Red" />
+
+    <Button
+        android:id="@id/signal_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Signal_Test" />
+
+    <Button
+        android:id="@id/version_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Version_Test" />
+
+    <Button
+        android:id="@id/stopButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/Test_Stop" />
+
+    <TextView
+        android:textSize="30.0sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@id/rssiText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip" />
+
+    <TextView
+        android:textSize="30.0sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip" />
+</LinearLayout>

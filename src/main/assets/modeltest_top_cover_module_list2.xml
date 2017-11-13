@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="Keypad test">
+            <intent>com.android.engineeringmode.autotest.KeypadTest</intent>
+        </ModelItem>
+
+        <ModelItem id="Keyboard BackLight">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelKeyboardBackLight</intent>
+        </ModelItem>
+
+        <ModelItem id="FingerPrintQuality test">
+            <intent>com.fingerprints.fingerprintsensortest.FingerPrintQualityTest</intent>
+        </ModelItem>
+
+        <ModelItem id="FingerPrintAuto test">
+            <intent>com.fingerprints.fingerprintsensortest.SensorTestToolActivity</intent>
+        </ModelItem>
+    </Response>
+</kml>

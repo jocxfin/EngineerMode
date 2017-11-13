@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        style="@style/background_style">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/background_style">
+
+            <TextView
+                android:textSize="40.0dip"
+                android:gravity="center"
+                android:id="@id/tv_light_intensit_show"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/l_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@id/l_btn_exit_test"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skip"
+            style="@style/style_bottom_button_right" />
+    </LinearLayout>
+</LinearLayout>

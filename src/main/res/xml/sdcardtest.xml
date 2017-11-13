@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/audio_test"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sdcard_test_title">
+        <PreferenceScreen
+            android:title="@string/sdcard_total_cap"
+            android:key="sdcard_total_cap" />
+        <PreferenceScreen
+            android:title="@string/sdcard_available"
+            android:key="sdcard_available" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sdcard_internal_category">
+        <Preference
+            android:title="@string/sdcard_total_cap"
+            android:key="internal_total_cap" />
+        <Preference
+            android:title="@string/sdcard_available"
+            android:key="internal_available" />
+    </PreferenceCategory>
+</PreferenceScreen>

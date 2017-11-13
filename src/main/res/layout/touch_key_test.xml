@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="14.0sp"
+        android:id="@id/signal_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_start"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:textSize="44.0sp"
+        android:gravity="center"
+        android:id="@id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/starttest"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:textSize="44.0sp"
+        android:gravity="center"
+        android:id="@id/btn_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50.0dip"
+        android:text="@string/exitTest"
+        android:layout_below="@id/btn_start"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

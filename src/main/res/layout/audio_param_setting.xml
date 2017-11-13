@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/background_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="34.0px"
+        android:gravity="center_vertical"
+        android:id="@id/audio_param_text"
+        android:paddingLeft="6.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/audio_level" />
+
+    <Spinner
+        android:layout_gravity="center_horizontal"
+        android:id="@id/audio_param_spin"
+        android:layout_width="240.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip" />
+
+    <EditText
+        android:id="@id/audio_param_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6.0dip"
+        android:layout_marginTop="6.0dip"
+        android:layout_marginRight="6.0dip"
+        android:inputType="number" />
+
+    <TextView
+        android:textSize="34.0px"
+        android:gravity="center_horizontal"
+        android:id="@id/audio_param_seekinfo"
+        android:paddingLeft="6.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/audio_level_info" />
+
+    <Button
+        android:textSize="34.0px"
+        android:gravity="center_horizontal"
+        android:id="@id/audio_param_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:text="@string/band_mode_set" />
+</LinearLayout>

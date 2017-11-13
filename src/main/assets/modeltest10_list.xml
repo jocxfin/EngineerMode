@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Response>
+        <ModelItem id="NFC Test">
+            <intent>com.android.engineeringmode.manualtest.modeltest.ModelNfcTest</intent>
+        </ModelItem>
+
+        <ModelItem id="FingerPrintQuality test">
+            <intent>com.oppo.fingerprints.fingerprintsensortest.FingerPrintQualityTest</intent>
+        </ModelItem>
+
+        <ModelItem id="FingerPrintAuto test">
+            <intent>com.oppo.fingerprints.fingerprintsensortest.FingerPrintAutoTest</intent>
+        </ModelItem>
+    </Response>
+</kml>

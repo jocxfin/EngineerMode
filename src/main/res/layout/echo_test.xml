@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="150.0dip">
+
+        <TextView
+            android:textSize="40.0dip"
+            android:gravity="center"
+            android:id="@id/tv_echo_test"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/echotest_doing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="27.0sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/ehcotest_open"
+            android:layout_width="128.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/echotest_open" />
+
+        <Button
+            android:textSize="27.0sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/ehcotest_close"
+            android:layout_width="128.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:text="@string/echotest_close" />
+
+        <Button
+            android:textSize="60.0px"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/anc_test"
+            android:layout_width="128.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:text="@string/anc_test" />
+    </LinearLayout>
+</LinearLayout>

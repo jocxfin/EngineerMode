@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/app_name"
+    android:key="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/networkset_title">
+        <intent android:action="com.android.engineeringmode.network.NetWorkSet" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/protocol_test_switcher">
+        <intent android:action="com.android.engineeringmode.ProtocolTestSwitcher" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/gprs_act_title">
+        <intent
+            android:targetPackage="com.android.settings"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.settings.RadioInfo" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/imei_pcb_check">
+        <intent android:action="com.android.engineeringmode.IMeiAndPcbCheck" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/software_version">
+        <intent android:action="com.android.engineeringmode.CheckSoftwareInfo" />
+    </PreferenceScreen>
+    <Preference android:title="@string/audio_test">
+        <intent android:action="com.android.engineeringmode.audio.Audio" />
+    </Preference>
+    <PreferenceScreen android:title="@string/autotest_title">
+        <intent android:action="com.android.engineeringmode.autotest.AutoTest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/manual_test">
+        <intent android:action="com.android.engineeringmode.manualtest.ManualTest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/bt_test_title">
+        <intent android:action="com.android.engineeringmode.bluetoothtest.BluetoothTest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/wifi_test_title">
+        <intent android:action="com.android.engineeringmode.wifitest.WifiTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/nfc_continue_transmit_title"
+        android:key="key_nfc_continue_transmit">
+        <intent
+            android:targetPackage="com.oem.nfc"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oem.nfc.MainActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/nfc_se_test_title"
+        android:key="key_nfc_se_test">
+        <intent
+            android:targetPackage="com.oem.nfc"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oem.nfc.SeTestActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/gpio_switch_title"
+        android:key="key_gpio_switch">
+        <intent
+            android:targetPackage="com.oneplus.GpioSwitch"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oneplus.gpioswitch.GpioSwitch" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/auto_search_title"
+        android:key="auto_search_net"
+        android:summary="@string/auto_search_summary">
+        <intent android:action="com.android.engineeringmode.NetworkSearch" />
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/all_clear_title"
+        android:summary="@string/master_clear_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.manualtest.MasterClear" />
+    </Preference>
+    <PreferenceScreen android:title="@string/autoaging_title">
+        <intent android:action="com.android.engineeringmode.autoaging.AutoAgingMainListActivity" />
+    </PreferenceScreen>
+    <Preference android:title="@string/auto_fill_title">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.AutoFillSmsContacts" />
+    </Preference>
+    <Preference android:title="@string/qualcomm_settings">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.qualcomm.QualCommActivity" />
+    </Preference>
+    <Preference
+        android:enabled="true"
+        android:title="@string/charing_settings">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.ChargingSettings" />
+    </Preference>
+    <Preference
+        android:enabled="false"
+        android:title="@string/doby_test">
+        <intent android:action="com.oppo.doby" />
+    </Preference>
+    <CheckBoxPreference
+        android:title="@string/rf_cable_config"
+        android:key="rf_cable_config" />
+    <Preference
+        android:enabled="true"
+        android:title="@string/common_commands_test">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.CommonCommands" />
+    </Preference>
+    <Preference
+        android:title="@string/enter_fastbootmode"
+        android:key="enter_fastbootmode" />
+    <Preference
+        android:title="@string/rf_version"
+        android:key="rf_version" />
+    <Preference
+        android:title="@string/lisght_sensor_offset_test_title"
+        android:summary="@string/lisght_sensor_offset_test_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oem.sensorselftest.LightSensorOffsetTest" />
+    </Preference>
+    <Preference
+        android:title="@string/rgbsensor_irrate_write_test_title"
+        android:summary="@string/rgbsensor_irrate_write_test_summary">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oem.sensorselftest.RGBSensorIRRateWriteTest" />
+    </Preference>
+    <PreferenceScreen
+        android:title="@string/touch_key_test_title"
+        android:key="touch_key_test">
+        <intent android:action="com.android.engineeringmode.manualtest.TouchKeyTest" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/ddr_aging_test"
+        android:key="ddr_aging_test">
+        <intent android:action="com.android.engineeringmode.manualtest.DDRAgingTest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/supl_app_name">
+        <intent
+            android:targetPackage="com.android.engineeringmode"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.engineeringmode.supltool.SUPLToolTest" />
+    </PreferenceScreen>
+</PreferenceScreen>
